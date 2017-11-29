@@ -1,0 +1,3 @@
+User-agent: *
+
+sitemap: http://khajvandi.ir/sitemap.xml

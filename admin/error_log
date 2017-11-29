@@ -1,0 +1,20 @@
+[19-Oct-2017 09:06:28 Asia/Tehran] PHP Fatal error:  Class 'adminSalesController' not found in /home/khajvand/public_html/component/sales/admin/admin.sales.php on line 14
+[19-Oct-2017 10:17:55 Asia/Tehran] PHP Fatal error:  Class 'adminContactusController' not found in /home/khajvand/public_html/component/cv/admin/admin.cv.php on line 12
+[19-Oct-2017 10:26:36 Asia/Tehran] PHP Fatal error:  Class 'adminContactusController' not found in /home/khajvand/public_html/component/cv/admin/admin.cv.php on line 12
+[19-Oct-2017 13:22:32 Asia/Tehran] PHP Fatal error:  Call to undefined method adminContactusModel::getAll() in /home/khajvand/public_html/component/contactus/admin/model/admin.contactus.controller.php on line 108
+[19-Oct-2017 13:24:29 Asia/Tehran] PHP Fatal error:  Call to undefined method adminContactusModel::getFieldsName() in /home/khajvand/public_html/component/contactus/admin/model/admin.contactus.model.php on line 401
+[19-Oct-2017 13:26:37 Asia/Tehran] PHP Fatal error:  Call to undefined method adminContactusModel::getAll() in /home/khajvand/public_html/component/contactus/admin/model/admin.contactus.controller.php on line 108
+[22-Oct-2017 12:54:54 Asia/Tehran] PHP Fatal error:  Class 'adminEventModel' not found in /home/khajvand/public_html/component/index/admin/model/admin.index.controller.php on line 84
+[22-Oct-2017 12:58:28 Asia/Tehran] PHP Fatal error:  Class 'adminEventModel' not found in /home/khajvand/public_html/component/index/admin/model/admin.index.controller.php on line 83
+[22-Oct-2017 12:58:52 Asia/Tehran] PHP Fatal error:  Class 'adminEventModel' not found in /home/khajvand/public_html/component/index/admin/model/admin.index.controller.php on line 83
+[22-Oct-2017 12:59:09 Asia/Tehran] PHP Fatal error:  Class 'adminEventModel' not found in /home/khajvand/public_html/component/index/admin/model/admin.index.controller.php on line 83
+[22-Oct-2017 13:02:54 Asia/Tehran] PHP Fatal error:  Class 'adminEventModel' not found in /home/khajvand/public_html/component/index/admin/model/admin.index.controller.php on line 83
+[22-Oct-2017 13:02:59 Asia/Tehran] PHP Fatal error:  Class 'adminEventModel' not found in /home/khajvand/public_html/component/index/admin/model/admin.index.controller.php on line 83
+[22-Oct-2017 13:22:56 Asia/Tehran] PHP Fatal error:  Class 'dictionary' not found in /home/khajvand/public_html/common/func.inc.php on line 1373
+[22-Oct-2017 13:24:09 Asia/Tehran] PHP Fatal error:  Class 'dictionary' not found in /home/khajvand/public_html/common/func.inc.php on line 1373
+[22-Oct-2017 13:24:28 Asia/Tehran] PHP Fatal error:  Class 'dictionary' not found in /home/khajvand/public_html/common/func.inc.php on line 1373
+[22-Oct-2017 13:24:30 Asia/Tehran] PHP Fatal error:  Class 'dictionary' not found in /home/khajvand/public_html/common/func.inc.php on line 1373
+[22-Oct-2017 13:24:31 Asia/Tehran] PHP Fatal error:  Class 'dictionary' not found in /home/khajvand/public_html/common/func.inc.php on line 1373
+[22-Oct-2017 13:25:03 Asia/Tehran] PHP Fatal error:  Class 'dictionary' not found in /home/khajvand/public_html/common/func.inc.php on line 1373
+[22-Oct-2017 13:25:51 Asia/Tehran] PHP Fatal error:  Class 'dictionary' not found in /home/khajvand/public_html/common/func.inc.php on line 1373
+[22-Oct-2017 13:25:54 Asia/Tehran] PHP Fatal error:  Class 'dictionary' not found in /home/khajvand/public_html/common/func.inc.php on line 1373
