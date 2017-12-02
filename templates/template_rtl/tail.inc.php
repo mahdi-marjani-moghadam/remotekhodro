@@ -81,7 +81,7 @@
             <div class="col_one_fourth ">
 
                 <div class="widget quick-contact-widget clearfix">
-                    <img src="<?php echo TEMPLATE_DIR; ?>/images/logo-dark.png" alt="خواجوندی" class="footer-logo">
+                    <img src="<?php echo TEMPLATE_DIR; ?>/images/logo-dark.png" alt="ساخت ریموت" class="footer-logo">
 
                     <p> بهترینها را از ما بخواهید</p>
 
@@ -99,41 +99,41 @@
                     <div class="clearfix" style="padding: 0; ">
 
                         <div class="col_full col_last">
-                            <strong>تلفن:</strong><span dir="ltr"> 021-44299069
+                            <strong>اینستاگرام:</strong><span dir="ltr"><a href="http://instagram.com/iranunlocks/" target="_top">iranunlocks</a>
 
   </span><br>
                             <strong>ایمیل:</strong><span dir="ltr"> info@Remotekhodro.com </span>
                         </div>
                     </div><br>
 <div>ما را در شبکه های اجتماعی دنبال کنید</div>
-                    <a href="https://www.facebook.com/remotekhodro/" class="social-icon si-small si-rounded topmargin-sm si-facebook">
+                    <!--<a href="https://www.facebook.com/remotekhodro/" class="social-icon si-small si-rounded topmargin-sm si-facebook">
                         <i class="icon-facebook"></i>
                         <i class="icon-facebook"></i>
-                    </a>
+                    </a>-->
 
                     <a href="https://telegram.me/remotekhodro" class="social-icon si-small si-rounded topmargin-sm si-twitter">
                         <i class="icon-email2"></i>
                         <i class="icon-email2"></i>
                     </a>
 
-                    <a href="www.youtube.com/" class="social-icon si-small si-rounded topmargin-sm si-youtube">
+                    <!--<a href="www.youtube.com/" class="social-icon si-small si-rounded topmargin-sm si-youtube">
                         <i class="icon-youtube"></i>
                         <i class="icon-youtube"></i>
-                    </a>
+                    </a>-->
 
-                    <a href="https://www.instagram.com/remotekhodro/" class="social-icon si-small si-rounded topmargin-sm si-instagram">
+                    <a href="https://www.instagram.com/iranunlocks/" class="social-icon si-small si-rounded topmargin-sm si-instagram">
                         <i class="icon-instagram"></i>
                         <i class="icon-instagram"></i>
                     </a>
 
 
 
-                    <a href="http://www.aparat.com/" class="social-icon si-small si-rounded topmargin-sm si-soundcloud">
+                   <!-- <a href="http://www.aparat.com/" class="social-icon si-small si-rounded topmargin-sm si-soundcloud">
                         <i class="icon-play"></i>
                         <i class="icon-play"></i>
                     </a>
 
-
+-->
 
 
                 </div>
@@ -143,7 +143,15 @@
 
             <div class=" col_half col_last" style="direction: rtl;">
                 <strong>
-             شیشیسشسیشسیشسیشسیشسیشسیسشسیشسیسشی
+                    تلفن های تماس:
+<br>
+                    ۰۹۱۲۵۵۷۵۸۸۷ - ۰۹۱۲۴۸۰۲۲۹۵<br>
+
+                    ۴۴۲۹۹۰۸۵ - ۴۴۲۹۹۰۶۹<br>
+                    جلال آل احمد شرق به غرب نرسیده به اشرفی اصفهانی خیابان شایق شمالی جنب کوچه هفتم نگین غرب
+                    <br>
+                    <a href="https://goo.gl/maps/bYKuazB1iT62">لوکیشن ایران آنلاک</a>
+
                     </h1></strong>
             </div>
 

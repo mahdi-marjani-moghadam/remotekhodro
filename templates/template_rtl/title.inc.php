@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html dir="rtl" lang="en-US">
+<html  lang="ar">
 <head>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
     <!-- Stylesheets
     ============================================= -->
@@ -13,6 +14,9 @@
     <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/dark-rtl.css" type="text/css" />
     <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/font-icons.css" type="text/css" />
     <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/font-icons-rtl.css" type="text/css" />
+    <!--<link rel="stylesheet" href="<?/*=TEMPLATE_DIR*/?>css/et-line.css" type="text/css" />-->
+
+
     <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/animate.css" type="text/css" />
     <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/magnific-popup.css" type="text/css" />
     <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/responsive.css" type="text/css" />
@@ -63,13 +67,13 @@
 
 </head>
 
-<body class="stretched dark" >
+<body class="stretched dark " dir="" >
 
 <!-- Document Wrapper
 ============================================= -->
 <div id="wrapper" class="clearfix">
 
-    <? if(isset($list['banner'])):?>
+    <? if(isset($list['banner']) && 1==2):?>
     <section id="slider" class="<!--slider-parallax--> revslider-wrap full-screen clearfix">
 
         <!--
@@ -140,12 +144,19 @@
                 <!-- Logo
                 ============================================= -->
                 <div id="logo">
-                    <a href="index.html" class="standard-logo" data-dark-logo="<?=TEMPLATE_DIR?>images/logo-dark@2x.png"><img  src="<?=TEMPLATE_DIR?>images/logo-resto.png" alt="Canvas Logo"></a>
+
+
+                    <a href="index.html" class="standard-logo" data-dark-logo="<?php echo TEMPLATE_DIR; ?>/images/logo-dark.png">
+                        <img  src="<?php echo TEMPLATE_DIR; ?>/images/logo-dark.png" alt="ساخت ریموت نگین غرب">
+                    </a>
+                    <a href="index.html" class="retina-logo" data-dark-logo="<?php echo TEMPLATE_DIR; ?>/images/logo-dark.png">
+                        <img  src="<?php echo TEMPLATE_DIR; ?>/images/logo-dark.png" alt="ساخت ریموت نگین غرب">
+                    </a>
                 </div><!-- #logo end -->
 
                 <!-- Primary Navigation
                 ============================================= -->
-                <nav id="primary-menu" class="style-3" style="direction: ltr;float: right;">
+                <nav id="primary-menu" class="style-3" style="direction: ltr;">
                     <?
                     $temp = explode('/',$_SERVER['QUERY_STRING']);
                     $page = $temp[0] ?>
