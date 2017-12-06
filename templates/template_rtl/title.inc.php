@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html  lang="ar">
+<html dir="rtl" lang="en-US">
 <head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
     <!-- Stylesheets
     ============================================= -->
@@ -14,9 +13,6 @@
     <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/dark-rtl.css" type="text/css" />
     <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/font-icons.css" type="text/css" />
     <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/font-icons-rtl.css" type="text/css" />
-    <!--<link rel="stylesheet" href="<?/*=TEMPLATE_DIR*/?>css/et-line.css" type="text/css" />-->
-
-
     <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/animate.css" type="text/css" />
     <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/magnific-popup.css" type="text/css" />
     <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/responsive.css" type="text/css" />
@@ -67,68 +63,13 @@
 
 </head>
 
-<body class="stretched dark " dir="" >
+<body class="stretched dark" >
 
 <!-- Document Wrapper
 ============================================= -->
 <div id="wrapper" class="clearfix">
 
-    <? if(isset($list['banner']) && 1==2):?>
-    <section id="slider" class="<!--slider-parallax--> revslider-wrap full-screen clearfix">
 
-        <!--
-        #################################
-            - THEMEPUNCH BANNER -
-        #################################
-        -->
-        <div class="tp-banner-container">
-            <div class="tp-banner" >
-                <ul>    <!-- SLIDE  --><?foreach ($list['banner'] as $k =>$v):?>
-                    <li class="dark" data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-thumb="<?=RELA_DIR?>statics/banner/<?=$v['image']?>" data-delay="12000"  data-saveperformance="off" data-title="<?=$v['title']?>">
-                        <!-- MAIN IMAGE -->
-                        <img src="<?=RELA_DIR?>statics/banner/<?=$v['image']?>"  alt="خواجوندی"  data-bgposition="left center" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="130" data-scaleend="100" data-bgpositionend="right center">
-                        <!-- LAYERS -->
-
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
-                             data-x="540"
-                             data-y="230"
-                             data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-                             data-speed="800"
-                             data-start="1200"
-                             data-easing="easeOutQuad"
-                             data-splitin="none"
-                             data-splitout="none"
-                             data-elementdelay="0.01"
-                             data-endelementdelay="0.1"
-                             data-endspeed="1000"
-                             data-endeasing="Power4.easeIn" style="z-index: 3; font-size: 60px;"><?=$v['title']?></div>
-
-                        <div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text tleft"
-                             data-x="600"
-                             data-y="340"
-                             data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-                             data-speed="800"
-                             data-start="1400"
-                             data-easing="easeOutQuad"
-                             data-splitin="none"
-                             data-splitout="none"
-                             data-elementdelay="0.01"
-                             data-endelementdelay="0.1"
-                             data-endspeed="1000"
-                             data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 550px; white-space: normal;"><?=$v['description']?></div>
-
-
-
-                    </li>
-                    <!-- SLIDE  -->
-
-                    <?endforeach;?></ul>
-            </div>
-        </div>
-
-    </section>
-    <? endif;?>
     <!-- Header
     ============================================= -->
 
@@ -144,19 +85,12 @@
                 <!-- Logo
                 ============================================= -->
                 <div id="logo">
-
-
-                    <a href="index.html" class="standard-logo" data-dark-logo="<?php echo TEMPLATE_DIR; ?>/images/logo-dark.png">
-                        <img  src="<?php echo TEMPLATE_DIR; ?>/images/logo-dark.png" alt="ساخت ریموت نگین غرب">
-                    </a>
-                    <a href="index.html" class="retina-logo" data-dark-logo="<?php echo TEMPLATE_DIR; ?>/images/logo-dark.png">
-                        <img  src="<?php echo TEMPLATE_DIR; ?>/images/logo-dark.png" alt="ساخت ریموت نگین غرب">
-                    </a>
+                    <a href="index.html" class="standard-logo" data-dark-logo="<?=TEMPLATE_DIR?>images/logo-dark@2x.png"><img  src="<?=TEMPLATE_DIR?>images/logo-resto.png" alt="Canvas Logo"></a>
                 </div><!-- #logo end -->
 
                 <!-- Primary Navigation
                 ============================================= -->
-                <nav id="primary-menu" class="style-3" style="direction: ltr;">
+                <nav id="primary-menu" class="style-3" style="direction: ltr;float: right;">
                     <?
                     $temp = explode('/',$_SERVER['QUERY_STRING']);
                     $page = $temp[0] ?>
