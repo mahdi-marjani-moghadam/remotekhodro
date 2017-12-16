@@ -45,13 +45,14 @@ class indexController
     public function template($list=array(),$msg='')
     {
         global $PARAM,$member_info;
-        //print_r($list['category_list']);
+
         //die();
         global $PARAM, $lang;
 
         switch($this->exportType)
         {
             case 'html':
+                extract($list, EXTR_SKIP);
                 include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/title.inc.php");
                 include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/$this->fileName");
 
@@ -176,11 +177,12 @@ class indexController
         }
 
 
-        //print_r_debug($export);
+//        print_r_debug($export['category']);
         //$export['banner'] = $banner['export']['list'];
         $this->fileName = "index.php";
 //      print_r_debug($export);
-        $this->template($export);
+        $this->template(compact('export'));
+        die();
 
     }
 

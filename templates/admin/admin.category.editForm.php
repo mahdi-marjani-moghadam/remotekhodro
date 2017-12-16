@@ -137,7 +137,7 @@
               </div>
             </div>
             <div class="row xsmallSpace hidden-xs"></div>
-            <div class="row" style="display: none">
+            <div class="row" style="">
                 <div class="col-xs-12 col-sm-12 col-md-6">
                     <div class="form-group">
                       <label class="col-xs-12 col-sm-4 pull-right control-label rtl" for="xImagePath">تصویر:</label>
@@ -147,7 +147,9 @@
                               <span class="input-group-btn">
                                 <input class="btn  btn-info" type="button" value="انتخاب فایل" onclick="BrowseServer( 'Images:/', 'xImagePath' );" />
                               </span>
+
                             </div>
+                            <img src="<?=RELA_DIR?><?=$list['img_name']?>">
                             <div id="preview" style="display:none">
                                 <strong>Selected Thumbnails</strong><br/>
                                 <div id="thumbnails"></div>

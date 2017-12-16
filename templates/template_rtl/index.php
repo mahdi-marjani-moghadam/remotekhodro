@@ -2,34 +2,23 @@
         <div class="container clearfix">
 
             <div class="row topmargin-lg bottommargin-sm">
+                <?php
 
-                <div class="col-lg-4">
+                foreach ($export['category'] as $k => $cat):
+                ?>
+                <div class="col-lg-1">
 
                     <div class="entry-image">
-                        <a href="<?=RELA_DIR?>blog/<?=$v['Blog_id']?>/<?=$v['title']?>" ><img class="image_fade" src="http://remote.local.ir/statics/blog/small/1512393893._Edit20161123_121703.jpg" alt="Standard Post with Image"></a>
+                        <a href="" class="text-center" >
+                            <img class="image_fade" src="<?=RELA_DIR?><?=$cat['img_name']?>" alt="<?=$cat['alt_fa']?>">
+                            <?=$cat['title_fa']?>
+                        </a>
                     </div>
-
-                        <div class="entry-image">
-                            <a href="<?=RELA_DIR?>blog/<?=$v['Blog_id']?>/<?=$v['title']?>" ><img class="image_fade" src="http://remote.local.ir/statics/blog/small/1512393893._Edit20161123_121703.jpg" alt="Standard Post with Image"></a>
-                        </div>
 
                 </div>
-                <div class="col-lg-4">
-                    <div class="entry-image">
-                        <a href="<?=RELA_DIR?>blog/<?=$v['Blog_id']?>/<?=$v['title']?>" ><img class="image_fade" src="http://remote.local.ir/statics/blog/small/1512393893._Edit20161123_121703.jpg" alt="Standard Post with Image"></a>
-                    </div>
-                    <div class="entry-image">
-                        <a href="<?=RELA_DIR?>blog/<?=$v['Blog_id']?>/<?=$v['title']?>" ><img class="image_fade" src="http://remote.local.ir/statics/blog/small/1512393893._Edit20161123_121703.jpg" alt="Standard Post with Image"></a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="entry-image">
-                        <a href="<?=RELA_DIR?>blog/<?=$v['Blog_id']?>/<?=$v['title']?>" ><img class="image_fade" src="http://remote.local.ir/statics/blog/small/1512393893._Edit20161123_121703.jpg" alt="Standard Post with Image"></a>
-                    </div>
-                    <div class="entry-image">
-                        <a href="<?=RELA_DIR?>blog/<?=$v['Blog_id']?>/<?=$v['title']?>" ><img class="image_fade" src="http://remote.local.ir/statics/blog/small/1512393893._Edit20161123_121703.jpg" alt="Standard Post with Image"></a>
-                    </div>
-                </div>
+                <?php
+                endforeach;
+                ?>
 
 
 

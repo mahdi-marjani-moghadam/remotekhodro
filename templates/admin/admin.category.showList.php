@@ -57,6 +57,7 @@
                     <thead>
                     <tr>
                         <th>ردیف</th>
+                        <th>تصویر</th>
                         <th>نام دسته بندی</th>
                         <th>آدرس اینترنتی</th>
                         <th>کلمات کلیدی</th>
@@ -66,6 +67,7 @@
                     </tr>
                     </thead>
                     <tfoot>
+                        <th><input type="text" name="search_10" value="" class="search_init form-control"/></th>
                         <th><input type="text" name="search_10" value="" class="search_init form-control"/></th>
                         <th><input type="text" name="search_20" value="" class="search_init form-control"/></th>
                         <th><input type="text" name="search_30" value="" class="search_init form-control"/></th>
@@ -79,6 +81,7 @@
                     ?>
                         <tr>
                             <td><?php echo $fields['dataTableCount']; ?></td>
+                            <td><img class="image_fade" src="<?=RELA_DIR?><?=$fields['img_name']?>" alt="<?=$fields['alt_fa']?>"></td>
                             <td><?php echo $fields['export']; ?></td>
                             <td><?php echo $fields['url']; ?></td>
                             <td><?php echo $fields['meta_keyword']; ?></td>
