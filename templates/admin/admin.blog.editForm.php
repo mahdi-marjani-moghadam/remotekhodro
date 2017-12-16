@@ -66,9 +66,8 @@
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                 <div class="form-group">
-                                    <label class="col-xs-12 col-sm-2 col-md-4 pull-right control-label rtl"
-                                           for="description">توضیحات :</label>
-                                    <div class="col-xs-12 col-sm-10 col-md-8 pull-right">
+
+                                    <div class="col-xs-12 col-sm-12 col-md-12 pull-right">
 
                                         <?php
 
@@ -93,17 +92,39 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-6">
+                                    <div class="form-group">
+                                        <label class="col-xs-12 col-sm-4 col-md-4 pull-right control-label rtl"
+                                               for="meta_keywords">Meta keyword :</label>
+                                        <div class="col-xs-12 col-sm-8 col-md-8 pull-right">
+                                            <input type="text" class="form-control" name="meta_keywords" id="meta_keywords"  value="<?= $list['meta_keywords'] ?>">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6">
+                                    <div class="form-group">
+                                        <label class="col-xs-12 col-sm-4 col-md-4 pull-right control-label rtl"
+                                               for="meta_description">Meta description:</label>
+                                        <div class="col-xs-12 col-sm-8 col-md-8 pull-right">
+                                            <input type="text" class="form-control" name="meta_description" id="meta_description" value="<?= $list['meta_description'] ?>">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="col-xs-12 col-sm-12 col-md-6">
                                 <div class="form-group">
                                     <label class="col-xs-12 col-sm-4 pull-right control-label rtl"
                                            for="category_id">انتخاب دسته بندی:</label>
                                     <div class="col-xs-12 col-sm-8 pull-right">
+
                                         <select name="category_id[]" id="category_id" data-input="select2" multiple>
                                             <?
+
                                             foreach($list['category'] as $category_id => $value)
                                             {
                                                 ?>
-                                                <option <?php echo in_array($value['Category_id'], $list['category_id']) ? 'selected' : '' ?>
+                                                <option <?php echo in_array($value['Category_id'], explode(',',$list['category_id'])) ? 'selected' : '' ?>
                                                     value="<?= $value['Category_id'] ?>">
                                                     <?= $value['export'] ?>
                                                 </option>
@@ -123,8 +144,8 @@
                                            for="xImagePath">تصویر:</label>
                                     <div class="col-xs-12 col-sm-8 pull-right">
                                         <div class="input-group" dir="ltr">
-                                            <input type="file" class="form-control"name="image" >
-                                            <br>
+                                            <input type="file" class="form-control" name="image" >
+
                                             <img src="<?=RELA_DIR?>statics/blog/<?=$list['image']?>" class="img-responsive">
                                         </div>
 
@@ -141,7 +162,10 @@
                                 <div class="form-group">
                                     <label class="col-xs-12 col-sm-4 pull-right control-label rtl" for="xImagePath">تصویر سایز کوچک:</label>
                                     <div class="col-xs-12 col-sm-8 pull-right">
-                                        <input type="file" name="imagesmall">
+                                        <input type="file" class="form-control" name="imagesmall">
+
+                                        <img src="<?=RELA_DIR?>statics/blog/small/<?=$list['image']?>" class="img-responsive">
+
                                     </div>
                                 </div>
                             </div>

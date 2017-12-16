@@ -261,6 +261,7 @@ function redirectPage($page, $message = '')
 
 
     <?php
+//    print_r_debug($_SESSION);
     die();
 }
 

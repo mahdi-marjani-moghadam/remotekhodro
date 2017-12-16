@@ -3,6 +3,8 @@
 <head>
 
 
+    <meta name="description" content="<?=$meta_description?>">
+    <meta name="keywords" content="<?=$meta_keyword?>">
     <!-- Stylesheets
     ============================================= -->
     <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/bootstrap.css" type="text/css" />
@@ -63,7 +65,7 @@
 
 </head>
 
-<body class="stretched dark" >
+<body class="stretched " >
 
 <!-- Document Wrapper
 ============================================= -->

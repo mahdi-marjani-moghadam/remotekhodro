@@ -39,6 +39,7 @@ class adminBlogController
     function template($list = [], $msg='')
     {
         global $messageStack;
+        //print_r($messageStack);
 
         if($msg == '')
         {
@@ -108,6 +109,7 @@ class adminBlogController
             array( 'db' => 'brief_description', 'dt' =>$i++),
             array( 'db' => 'description', 'dt' => $i++ ),
             array( 'db' => 'image',   'dt' => $i++),
+//            array( 'db' => 'imagesmall',   'dt' => $i++),
             array( 'db' => 'Artists_id', 'dt' => $i++ )
         );
         $convert=new convertDatatableIO();
@@ -145,11 +147,16 @@ class adminBlogController
         $other['5']=array(
             'formatter' =>function($list)
             {
-                $st = "<img height='50' src='".RELA_DIR.'statics/blog/'.$list['Artists_id'].'/'.$list['image']."'>";
+                $st = "تصویر کوچک";
+                $st .= "<img height='40' src='".RELA_DIR.'statics/blog/'.$list['Artists_id'].'/'.$list['imagesmall']."'>";
+                $st .= "<br>";
+                $st .= "تصویر بزرگ";
+                $st .= "<img height='50' src='".RELA_DIR.'statics/blog/'.$list['Artists_id'].'/'.$list['image']."'>";
 
                 return $st;
             }
         );
+
         $internalVariable['showstatus']=$fields['status'];
         $other[$i-1]=array(
             'formatter' =>function($list,$internal)
@@ -321,7 +328,6 @@ class adminBlogController
         {
             $this->showBlogEditForm($fields,$result['msg']);
         }
-
         $blog->save();
 
         if(file_exists($_FILES['image']['tmp_name'])){
@@ -350,7 +356,10 @@ class adminBlogController
             $this->showBlogEditForm($fields,$result['msg']);
         }
         $msg='عملیات با موفقیت انجام شد';
-        redirectPage(RELA_DIR . "admin/index.php?component=blog", $msg);
+
+        $messageStack->add_session('message',$msg,'success');
+
+        redirectPage(RELA_DIR . "admin/index.php?component=blog&action=edit&id=".$fields['Blog_id'], $msg);
         die();
     }
 

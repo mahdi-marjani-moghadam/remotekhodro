@@ -93,9 +93,9 @@
 
               <div class="col-xs-12 col-sm-12 col-md-12">
                   <div class="form-group">
-                      <label class="col-xs-12 col-sm-2 col-md-4 pull-right control-label rtl"
-                             for="description">توضیحات :</label>
-                      <div class="col-xs-12 col-sm-10 col-md-8 pull-right">
+                      <label class="col-xs-12 col-sm-1 col-md-1 pull-right control-label rtl"
+                             for="description">توضیحات</label>
+                      <div class="col-xs-12 col-sm-11 col-md-11 pull-right">
 
                           <?php
 
@@ -120,6 +120,25 @@
                       </div>
                   </div>
               </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label class="col-xs-12 col-sm-4 pull-right control-label rtl" for="meta_keywords">Meta keyword:</label>
+                            <div class="col-xs-12 col-sm-8 pull-right">
+                                <input type="text" class="form-control" name="meta_keywords" id="meta_keywords"   value="<?=$list['meta_keywords']?>">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label class="col-xs-12 col-sm-4 pull-right control-label rtl" for="Meta_description">meta description:</label>
+                            <div class="col-xs-12 col-sm-8 pull-right">
+                                <input type="text" class="form-control" name="Meta_description"  id="Meta_description"  value="<?=$list['Meta_description']?>">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row xsmallSpace hidden-xs"></div>
                 <div class="col-xs-12 col-sm-12 col-md-6">
                     <div class="form-group">
                         <label class="col-xs-12 col-sm-4 pull-right control-label rtl"

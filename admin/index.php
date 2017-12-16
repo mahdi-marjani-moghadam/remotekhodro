@@ -1,9 +1,9 @@
 <?php
-
 include_once("../server.inc.php");
+//print_r($_SESSION);
 include_once(ROOT_DIR . "common/db.inc.php");
-include_once(ROOT_DIR . "admin/init.inc.php");
 include_once(ROOT_DIR . "common/func.inc.php");
+include_once(ROOT_DIR . "admin/init.inc.php");
 include_once(ROOT_DIR."/common/validators.php");
 include_once ROOT_DIR.'common/looeic.php';
 
