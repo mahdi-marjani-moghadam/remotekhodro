@@ -71,7 +71,7 @@
 
 </footer><!-- #footer end -->*/?>
 
-<footer id="footer" class="dark"  >
+<footer id="footer" class=""  >
 
     <div class="container">
 

@@ -65,7 +65,7 @@
 
 </head>
 
-<body class="stretched " >
+<body class=" " >
 
 <!-- Document Wrapper
 ============================================= -->

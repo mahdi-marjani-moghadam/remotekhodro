@@ -6,7 +6,7 @@
 
                 foreach ($export['category'] as $k => $cat):
                 ?>
-                <div class="col-lg-1">
+                <div class="col-lg-1 col-sm-1 col-">
 
                     <div class="entry-image">
                         <a href="" class="text-center" >
