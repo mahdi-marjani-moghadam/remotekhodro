@@ -13,12 +13,12 @@ if(isset($exportType))
 {
     $servicesController->exportType=$exportType;
 }
-/*if(isset($PARAM[1]))
+if(isset($PARAM[1]))
 {
     $servicesController->showMore($PARAM[1]);
     die();
 }else
-{*/
+{
     //$fields['filter']['title']='sdf';
     $fields['limit']['start']=(isset($page))?($page-1)*PAGE_SIZE:'0';
     $fields['limit']['length']=PAGE_SIZE;
@@ -26,4 +26,4 @@ if(isset($exportType))
    // print_r_debug($fields);
     $servicesController->showALL($fields);
     die();
-//}
+}

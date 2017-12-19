@@ -9,7 +9,7 @@
                 <div class="col-lg-1 col-sm-1 col-">
 
                     <div class="entry-image">
-                        <a href="" class="text-center" >
+                        <a href="<?=RELA_DIR?>/services/<?=$cat['parent_id']?>" class="text-center" >
                             <img class="image_fade" src="<?=RELA_DIR?><?=$cat['img_name']?>" alt="<?=$cat['alt_fa']?>">
                             <?=$cat['title_fa']?>
                         </a>

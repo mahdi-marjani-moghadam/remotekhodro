@@ -9,25 +9,27 @@
                 <!-- Post Content
                 ============================================= -->
                 <div class="  ">
+                    <div id="portfolio" class="portfolio grid-container clearfix">
+                        <? foreach($list as $k => $v):?>
+                        <article class="portfolio-item pf-media pf-icons">
+                            <div class="portfolio-image">
+                                <a href="portfolio-single.html">
+                                    <img src="<?=RELA_DIR?>statics/services/<?=$v['image']?>" alt="<?=$v['title']?>">
+                                </a>
+                                <div class="portfolio-overlay">
+                                    <a href="<?=RELA_DIR?>statics/services/<?=$v['image']?>" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+                                    <a href="portfolio-single.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+                                </div>
+                            </div>
+                            <div class="portfolio-desc">
+                                <h3><a href="portfolio-single.html"><?=$v['title']?></a></h3>
+                                <span><a href="#"><?=$v['brief_description']?></a>
+                            </div>
+                        </article>
+                        <? endforeach;?>
 
-
-                    <h1 class="center" style="font-size: 3em;">صفحه در حال به روز رسانی است</h1>
-
-                    <div class="panel panel-default">
-                        <!-- Default panel contents -->
-
-
-
-                        <!-- List group -->
-                        <ul class="list-group">
-                            <? foreach($list as $k => $v):?>
-                            <li class="list-group-item"><?=$v['title']?></li>
-                            <? endforeach;?>
-
-
-
-                        </ul>
                     </div>
+
 
 
 

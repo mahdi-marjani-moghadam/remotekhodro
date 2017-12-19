@@ -48,4 +48,14 @@ class servicesController
 
         $this->template($obj['export']['list']);
     }
+    public function showMore($_input)
+    {
+        $services = new services();
+        $obj = $services::getBy_parent_id($_input)->getList();
+
+        $this->fileName = 'services.php';
+
+        $this->template($obj['export']['list']);
+    }
+
 }
