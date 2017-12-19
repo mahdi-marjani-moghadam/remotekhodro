@@ -2,6 +2,10 @@
         <div class="container clearfix">
 
             <div class="row topmargin-lg bottommargin-sm">
+                <div class="fancy-title title-dotted-border title-center">
+                    <h1 class="">قیمت و نحوه ساخت سوئیچ و ساخت ریموت خودرو </h1>
+                </div>
+
                 <?php
 
                 foreach ($export['category'] as $k => $cat):
