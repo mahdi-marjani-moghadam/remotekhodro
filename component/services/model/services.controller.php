@@ -56,15 +56,26 @@ $export['services']=$obj['services']['export']['list'];
 
         $this->template($export);
     }
-    public function showMore($_input)
+    public function showList($_input)
     {
         $services = new services();
         $obj = $services::getBy_parent_id($_input)->getList();
 /*        print_r_debug($obj);*/
 
+        $this->fileName = 'services.showList.php';
+
+        $this->template($obj['export']['list']);
+    }
+    public function showMore($_input)
+    {print_r_debug("asd");
+        $services = new services();
+        $obj = $services::getBy_parent_id($_input)->getList();
+        /*        print_r_debug($obj);*/
+
         $this->fileName = 'services.showMore.php';
 
         $this->template($obj['export']['list']);
     }
+
 
 }

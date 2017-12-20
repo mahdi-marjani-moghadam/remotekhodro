@@ -47,11 +47,11 @@
                                 </a>
                                 <div class="portfolio-overlay">
                                     <a href="<?=RELA_DIR?>statics/services/<?=$v['image']?>" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-                                    <a href="portfolio-single.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+                                    <a href="<?=RELA_DIR?>services/<?=$v['parent_id']?>/<?=$v['Services_id']?>" class="right-icon"><i class="icon-line-ellipsis"></i></a>
                                 </div>
                             </div>
                             <div class="portfolio-desc">
-                                <h3><a href="portfolio-sinle.html"><?=$v['title']?></a></h3>
+                                <h3><a href="<?=RELA_DIR?>services/<?=$v['parent_id']?>/<?=$v['Services_id']?>"><?=$v['title']?></a></h3>
                                 <span><a href="#"><?=$v['brief_description']?></a>
                             </div>
                         </article>

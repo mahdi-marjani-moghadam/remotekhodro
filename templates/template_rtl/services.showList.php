@@ -1,33 +1,4 @@
-<div class="row topmargin-lg bottommargin-sm">
-    <div class="fancy-title title-dotted-border title-center">
-        <h1 class="">قیمت و نحوه ساخت سوئیچ و ریموت خودرو </h1>
-    </div>
-
-    <?php
-
-    foreach ($list['category'] as $k => $cat):
-        ?>
-        <div class="col-lg-1 col-sm-1 col-">
-
-            <div class="entry-image">
-                <a href="<?=RELA_DIR?>/services/<?=$cat['parent_id']?>" class="text-center" >
-                    <img class="image_fade" src="<?=RELA_DIR?><?=$cat['img_name']?>" alt="<?=$cat['alt_fa']?>">
-                    <?=$cat['title_fa']?>
-                </a>
-            </div>
-
-        </div>
-        <?php
-    endforeach;
-    ?>
-
-
-
-
-
-
-</div>
-
+qqq
 
 <section id="" class=" cloud1 clearfix"  >
     <div class="content-wrap">
@@ -39,7 +10,7 @@
                 ============================================= -->
                 <div class="  ">
                     <div id="portfolio" class="portfolio grid-container clearfix">
-                        <? foreach($list['services'] as $k => $v):?>
+                        <? foreach($list as $k => $v):?>
                         <article class="portfolio-item pf-media pf-icons">
                             <div class="portfolio-image">
                                 <a href="portfolio-single.html">

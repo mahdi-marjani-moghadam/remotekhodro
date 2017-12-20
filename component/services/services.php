@@ -15,7 +15,12 @@ if(isset($exportType))
 }
 if(isset($PARAM[1]))
 {
-    $servicesController->showMore($PARAM[1]);
+    $servicesController->showList($PARAM[1]);
+    die();
+}
+if(isset($PARAM[2]))
+{
+    $servicesController->showMore($PARAM[2]);
     die();
 }else
 {
