@@ -41,19 +41,28 @@ class servicesController
     function showALL()
     {global $obj;
         $services = new services();
-        $obj = $services->getByFilter();
+        $obj['services'] = $services->getByFilter();
 
+
+        include_once(ROOT_DIR."component/category/admin/model/admin.category.model.php");
+        $category = new adminCategoryModel();
+
+        $obj['category'] = $category->getByFilter();
+
+$export['category']=$obj['category']['export']['list'];
+$export['services']=$obj['services']['export']['list'];
 
         $this->fileName = 'services.php';
 
-        $this->template($obj['export']['list']);
+        $this->template($export);
     }
     public function showMore($_input)
     {
         $services = new services();
         $obj = $services::getBy_parent_id($_input)->getList();
+/*        print_r_debug($obj);*/
 
-        $this->fileName = 'services.php';
+        $this->fileName = 'services.showMore.php';
 
         $this->template($obj['export']['list']);
     }
