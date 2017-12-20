@@ -22,7 +22,7 @@
                                 </div>
                             </div>
                             <div class="portfolio-desc">
-                                <h3><a href="portfolio-single.html"><?=$v['title']?></a></h3>
+                                <h3><a href="portfolio-sinle.html"><?=$v['title']?></a></h3>
                                 <span><a href="#"><?=$v['brief_description']?></a>
                             </div>
                         </article>
