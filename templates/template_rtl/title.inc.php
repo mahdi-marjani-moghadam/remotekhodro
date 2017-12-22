@@ -27,6 +27,9 @@
     <link rel="stylesheet" type="text/css" href="<?=TEMPLATE_DIR?>include/rs-plugin/css/layers.css">
     <link rel="stylesheet" type="text/css" href="<?=TEMPLATE_DIR?>include/rs-plugin/css/navigation.css">
 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
     <!-- Document Title
     ============================================= -->
     <title>ایران ریموت</title>
@@ -84,15 +87,15 @@
 
                 <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
 
-                <!-- Logo
-                ============================================= -->
+
                 <div id="logo">
-                    <a href="index.html" class="standard-logo" data-dark-logo="<?=TEMPLATE_DIR?>images/logo-dark@2x.png"><img  src="<?=TEMPLATE_DIR?>images/logo-resto.png" alt="Canvas Logo"></a>
-                </div><!-- #logo end -->
+                    <a href="<?=RELA_DIR?>" class="standard-logo" data-dark-logo="<?=TEMPLATE_DIR?>images/logo-dark@2x.png"><img src="<?=TEMPLATE_DIR?>images/logo-dark@2x.png" alt="نگین غرب مرکز ساخت سوئیچ خودرو"></a>
+                    <a href="<?=RELA_DIR?>" class="retina-logo" data-dark-logo="<?=TEMPLATE_DIR?>images/logo-dark@2x.png"><img src="<?=TEMPLATE_DIR?>images/logo-dark@2x.png" alt="Canvas Logo"></a>
+                </div>
 
                 <!-- Primary Navigation
                 ============================================= -->
-                <nav id="primary-menu" class="style-3" style="direction: ltr;float: right;">
+                <nav id="primary-menu" class="style-3" style="direction: ltr;">
                     <?
                     $temp = explode('/',$_SERVER['QUERY_STRING']);
                     $page = $temp[0] ?>

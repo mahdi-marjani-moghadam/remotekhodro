@@ -60,11 +60,11 @@ $export['services']=$obj['services']['export']['list'];
     {
         $services = new services();
         $obj = $services::getBy_parent_id($_input)->getList();
-/*        print_r_debug($obj);*/
+        //print_r_debug($obj);
 
         $this->fileName = 'services.showList.php';
-
         $this->template($obj['export']['list']);
+        die();
     }
     public function showMore($_input)
     {print_r_debug("asd");

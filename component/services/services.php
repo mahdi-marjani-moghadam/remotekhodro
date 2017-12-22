@@ -13,6 +13,7 @@ if(isset($exportType))
 {
     $servicesController->exportType=$exportType;
 }
+
 if(isset($PARAM[1]))
 {
     $servicesController->showList($PARAM[1]);

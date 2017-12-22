@@ -54,7 +54,7 @@
                             <div class="col-xs-12 col-sm-12 col-md-6">
                                 <div class="form-group">
                                     <label class="col-xs-12 col-sm-4 col-md-4 pull-right control-label rtl"
-                                           for="brief_description">توضیحات مختصر:</label>
+                                           for="brief_description">عنوان ماشین:</label>
                                     <div class="col-xs-12 col-sm-8 col-md-8 pull-right">
                                         <input type="text" class="form-control" name="brief_description" id="brief_description" value="<?= $list['brief_description'] ?>">
                                     </div>
@@ -68,6 +68,35 @@
                                 <div class="form-group">
 
                                     <div class="col-xs-12 col-sm-12 col-md-12 pull-right">
+                                        <h3>توضیح ماشین</h3>
+                                        <?php
+
+                                        include_once ROOT_DIR.'common/ckeditor/ckeditor.php';
+                                        include_once ROOT_DIR.'common/ckfinder/ckfinder.php';
+                                        $ckeditor = new CKEditor();
+                                        $ckeditor->basePath = RELA_DIR.'common/ckeditor/';
+
+
+
+
+                                        $config['language'] = 'fa';
+                                        $config['filebrowserBrowseUrl'] = RELA_DIR.'common/ckfinder/ckfinder.html';
+                                        $config['filebrowserImageBrowseUrl'] = RELA_DIR.'common/ckfinder/ckfinder.html?type=Images';
+                                        $config['filebrowserUploadUrl'] = RELA_DIR.'common/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files';
+                                        $config['filebrowserImageUploadUrl'] = RELA_DIR.'common/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files';
+
+                                        $tt = $ckeditor->editor('car_description',$list['car_description'],$config);
+
+                                        echo $tt;
+                                        ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="form-group">
+
+                                    <div class="col-xs-12 col-sm-12 col-md-12 pull-right">
+                                        <h3>توضیح</h3>
 
                                         <?php
 
