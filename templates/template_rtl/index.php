@@ -31,7 +31,7 @@
 
                 </div>
 
-                <div class="col-md-4 col-sm-6 bottommargin">
+                <div class="col-md-4 col-sm-6 bottommargin rtl">
 
                     <div class="feature-box fbox-right topmargin fadeIn animated" data-animate="fadeIn">
                         <div class="fbox-icon">
@@ -63,7 +63,7 @@
                     <img  src="<?=TEMPLATE_DIR?>images/remote-png.png" alt="خواجوندی">
                 </div>
 
-                <div class="col-md-4 col-sm-6 bottommargin">
+                <div class="col-md-4 col-sm-6 bottommargin rtl">
 
                     <div class="feature-box topmargin fadeIn animated" data-animate="fadeIn">
                         <div class="fbox-icon">
@@ -97,7 +97,7 @@
 
 
         <div class="container clearfix">
-            <h1>نمونه کارها</h1>
+            <h1 class="rtl">نمونه کارها</h1>
             <div class="ltr">
                 <div  id="oc-posts" class="owl-carousel  posts-carousel carousel-widget" data-margin="20" data-nav="true" data-pagi="false" data-items-xxs="1" data-items-xs="2" data-items-sm="3" data-items-md="4">
 
@@ -107,7 +107,7 @@
                         <div style="direction: rtl" class="oc-item">
                             <div class="ipost clearfix">
                                 <div class="entry-image">
-                                    <a href="<?=RELA_DIR?>blog/<?=$v['Blog_id']?>/<?=$v['title']?>" ><img class="image_fade" src="<?=RELA_DIR?>statics/blog/small/<?=$v['imagesmall']?>" alt="<?=$v['title']?>"></a>
+                                    <a href="<?=RELA_DIR?>blog/<?=$v['Blog_id']?>/<?=$v['title']?>" ><img class="image_fade" src="<?=RELA_DIR?>statics/blog/small/<?=$v['imagesmall']?>"  alt="<?=$v['title']?>"></a>
                                 </div>
                                 <div class="entry-title">
                                     <h3><a href="<?=RELA_DIR?>blog/<?=$v['Blog_id']?>/<?=$v['title']?>"><?=$v['title']?></a></h3>
