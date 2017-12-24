@@ -195,7 +195,7 @@ class adminServicesController
      * @param $fields
      */
     public function editServices($fields)
-    {
+    {print_r_debug("ssssss");
         global $messageStack;
 
         if(!validator::required($fields['Services_id']) and !validator::Numeric($fields['Services_id']))

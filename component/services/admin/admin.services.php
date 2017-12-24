@@ -21,6 +21,7 @@ if(isset($exportType))
 switch ($_GET['action'])
 {
 
+
     case 'deleteServices':
 
         $input['Services_id']=$_GET['id'];
@@ -28,6 +29,7 @@ switch ($_GET['action'])
 
         break;
     case 'addServices':
+        print_r_debug($_POST);
         if(isset($_POST['action']) & $_POST['action']=='add')
         {
 
@@ -39,19 +41,19 @@ switch ($_GET['action'])
         }
         break;
     case 'editServices':
+
         if(isset($_POST['action']) & $_POST['action']=='edit')
         {
-
             $servicesController->editServices($_POST);
         }
         else
         {
+
             $input['Services_id']=$_GET['id'];
             $servicesController->showServicesEditForm($input, '');
         }
         break;
     default:
-
         $fields['order']['Services_id'] = 'DESC';
         $servicesController->showList($fields);
         break;
