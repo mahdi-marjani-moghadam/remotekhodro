@@ -67,11 +67,11 @@ $export['services']=$obj['services']['export']['list'];
         die();
     }
     public function showMore($_input)
-    {print_r_debug("asd");
+    {
         $services = new services();
-        $obj = $services::getBy_parent_id($_input)->getList();
+        $obj = $services::getBy_Services_id($_input)->getList();
         /*        print_r_debug($obj);*/
-
+/*print_r_debug($obj);*/
         $this->fileName = 'services.showMore.php';
 
         $this->template($obj['export']['list']);
