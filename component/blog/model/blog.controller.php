@@ -16,7 +16,7 @@ class blogController
     {
         $this->exportType = 'html';
     }
-    public function template($list = [], $msg)
+    public function template($list = [],$meta_keyword,$meta_description, $msg)
     {
 
         // global $conn, $lang;
@@ -83,9 +83,10 @@ class blogController
         $breadcrumb->add('بنر');
         $breadcrumb->add($blog['list']['title']);
         $export['breadcrumb'] = $breadcrumb->trail();*/
-
+        $meta_keyword = $result->fields['meta_keywords'];
+        $meta_description = $result->fields['meta_description'];
         $this->fileName = 'blog.showMore.php';
-        $this->template($result->fields);
+        $this->template($result->fields,$meta_keyword,$meta_description);
         die();
     }
 

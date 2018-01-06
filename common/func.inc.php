@@ -1226,7 +1226,7 @@ function fileUploader($input = array(), $file = array())
         $input['type'] = strtolower($input['type']);
         $type = explode(',', $input['type']);
     } else {
-        $type = array('jpg','mp4','mp3','pdf');
+        $type = array('jpg','mp4','mp3','pdf','png');
     }
 
 //check size of Image
