@@ -148,10 +148,10 @@ class adminBlogController
             'formatter' =>function($list)
             {
                 $st = "تصویر کوچک";
-                $st .= "<img height='40' src='".RELA_DIR.'statics/blog/'.$list['Artists_id'].'/'.$list['imagesmall']."'>";
+                $st .= "<img height='40' src='".RELA_DIR.'statics/blog/small/'.$list['imagesmall']."'>";
                 $st .= "<br>";
                 $st .= "تصویر بزرگ";
-                $st .= "<img height='50' src='".RELA_DIR.'statics/blog/'.$list['Artists_id'].'/'.$list['image']."'>";
+                $st .= "<img height='50' src='".RELA_DIR.'statics/blog/'.$list['image']."'>";
 
                 return $st;
             }

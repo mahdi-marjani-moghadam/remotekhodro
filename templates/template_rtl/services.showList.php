@@ -1,4 +1,4 @@
-qqq
+
 
 <section id="" class=" cloud1 clearfix"  >
     <div class="content-wrap">
@@ -13,7 +13,7 @@ qqq
                         <? foreach($list as $k => $v):?>
                         <article class="portfolio-item pf-media pf-icons">
                             <div class="portfolio-image">
-                                <a href="portfolio-single.html">
+                                <a href="">
                                     <img src="<?=RELA_DIR?>statics/services/<?=$v['image']?>" alt="<?=$v['title']?>">
                                 </a>
                                 <div class="portfolio-overlay">

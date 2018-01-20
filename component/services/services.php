@@ -18,6 +18,7 @@ if(isset($PARAM[1]))
 {
     if(isset($PARAM[2]))
     {
+
         $servicesController->showMore($PARAM[2]);
         die();
 
@@ -27,7 +28,9 @@ if(isset($PARAM[1]))
 {
 
     $servicesController->showList($PARAM[1]);
-    die();}else
+    die();
+}
+else
 {
     //$fields['filter']['title']='sdf';
     $fields['limit']['start']=(isset($page))?($page-1)*PAGE_SIZE:'0';
