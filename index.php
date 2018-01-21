@@ -79,7 +79,9 @@ if (array_search('page', $PARAM)) {
 
 
 if (!file_exists($componenetAdress)) {
-    $componenetAdress = ROOT_DIR.'component/404/404.php';
+    $componenetAdress = ROOT_DIR."component/index/index.php";
+
+    //$componenetAdress = ROOT_DIR.'component/404/404.php';
 }
 
 include_once $componenetAdress;

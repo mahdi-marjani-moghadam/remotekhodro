@@ -9,3 +9,6 @@ class services extends looeic
 {
 
 }
+class category extends looeic{
+
+}

@@ -105,7 +105,7 @@
 
                         </li>
 
-                        <li <?=( $page == 'sales')?"class='current'":'';?> class="sub-menu"><a href="<?=RELA_DIR?>services"><div>انواع خدمات<i class="icon-file-alt"></i> </div></a>
+                        <li <?=( $page == 'sales')?"class='current'":'';?> class="sub-menu"><a href="<?=RELA_DIR?>services/ساخت-سوئیچ-ساخت-سوییچ-ساخت-ریموت"><div>انواع خدمات<i class="icon-file-alt"></i> </div></a>
                         </li>
 
                         <li <?=( $page == 'blog')?"class='current'":'';?> class="sub-menu"><a href="<?=RELA_DIR?>blog"><div>وبلاگ<i class="icon-file-alt"></i> </div></a>

@@ -16,15 +16,15 @@ if(isset($exportType))
 
 if(isset($PARAM[1]))
 {
-    if(isset($PARAM[2]))
+    if(isset($PARAM[2]) && is_numeric($PARAM[2]))
     {
 
-        $servicesController->showMore($PARAM[2]);
+        $servicesController->showMore($PARAM[2],$PARAM[1]);
         die();
 
     }
 }
-if(isset($PARAM[1]))
+if(isset($PARAM[1]) )
 {
 
     $servicesController->showList($PARAM[1]);

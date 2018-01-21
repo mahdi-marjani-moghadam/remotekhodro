@@ -1,46 +1,28 @@
-
-
-
-<section id="" class=" cloud1 clearfix"  >
-    <div class="content-wrap">
-        <div class="container clearfix">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-
-                <!-- Post Content
-                ============================================= -->
-                <div class="  ">
-                    <div id="portfolio" class="portfolio grid-container clearfix">
-
-                        <article class="portfolio-item pf-media pf-icons">
-                            <div class="portfolio-image">
-                                <a href="portfolio-single.html">
-                                    <img src="<?=RELA_DIR?>statics/services/<?=$list['image']?>" alt="<?=$list['title']?>">
-                                </a>
-                                <div class="portfolio-overlay">
-                                    <a href="<?=RELA_DIR?>statics/services/<?=$list['image']?>" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-                                    <a href="portfolio-single.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-                                </div>
-                            </div>
-                            <div class="portfolio-desc">
-                                <h3><a href="portfolio-sinle.html">asdadasda<?=$list['title']?></a></h3>
-                                <span><a href="#"><?=$list['brief_description']?></a>
-                            </div>
-                        </article>
-
-
-                    </div>
-
-
-
-
-
-
-        </div>
-                </div>
-            </div>
-        </div>
+<section id="page-title" class="page-title-right rtl">
+    <div class="container clearfix">
+        <h1><?=$list['title']?></h1>
+        <ol class="breadcrumb">
+            <li><a href="<?=RELA_DIR?>">خانه</a></li>
+            <li><a href="<?=RELA_DIR?>services/ساخت-سوئیچ-ساخت-سوییچ-ساخت-ریموت">خدمات</a></li>
+            <li><a href="<?=RELA_DIR?>services/<?=$list['cat_id']?>/<?=$list['cat_alt']?>"><?=$list['cat_name']?></a></li>
+            <li class="active"><?=$list['title']?></li>
+        </ol>
     </div>
-
-
-    </section><!-- #content end -->
+</section>
+<section id="content" class="rtl" style="margin-bottom: 0px;">
+    <div class="content-wrap">
+            <div class="clear"></div>
+            <div id="portfolio" class="portfolio grid-container portfolio-1 clearfix" style="position: relative; height: 3010px;">
+                <article class="portfolio-item pf-media pf-icons clearfix" style="position: absolute; left: 0px; top: 0px;">
+                    <div class="portfolio-image">
+                        <img src="<?=RELA_DIR?>statics/services/<?=$list['image']?>" alt="<?=$list['title']?>">
+                    </div>
+                    <div class="portfolio-desc">
+                        <h3><?=$list['title']?></h3>
+                        <span><a href="<?=RELA_DIR?>services">بازگشت به سرویس ها</a></span>
+                        <p><?=$list['description']?></p>
+                    </div>
+                </article>
+            </div><!-- #portfolio end -->
+        </div>
+</section>

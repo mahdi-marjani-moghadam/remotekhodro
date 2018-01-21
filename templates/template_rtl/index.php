@@ -13,7 +13,7 @@
                 <div class="col-lg-1 col-sm-1 col-xs-4">
 
                     <div class="entry-image">
-                        <a href="<?=RELA_DIR?>services/<?=$cat['Category_id']?>" class="text-center" >
+                        <a href="<?=RELA_DIR?>services/<?=$cat['Category_id']?>/<?=$cat['alt_fa']?>" class="text-center" >
                             <img class="image_fade" src="<?=RELA_DIR?><?=$cat['img_name']?>" alt="<?=$cat['alt_fa']?>">
                             <?=$cat['title_fa']?>
                         </a>

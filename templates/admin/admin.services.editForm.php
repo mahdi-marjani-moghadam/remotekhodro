@@ -8,7 +8,7 @@
 <div class="content-control">
     <!--control-nav-->
     <ul class="control-nav pull-right">
-        <li><a class="rtl text-24"><i class="sidebar-icon fa fa-adn"></i> افزودن مقاله جدید</a></li>
+        <li><a class="rtl text-24"><i class="sidebar-icon fa fa-adn"></i> افزودن سرویس جدید</a></li>
     </ul><!--/control-nav-->
 </div><!-- /content-control -->
 
@@ -45,21 +45,13 @@
                             <div class="col-xs-12 col-sm-12 col-md-6">
                                 <div class="form-group">
                                     <label class="col-xs-12 col-sm-4 col-md-4 pull-right control-label rtl"
-                                           for="title">نام مقاله:</label>
+                                           for="title">نام :</label>
                                     <div class="col-xs-12 col-sm-8 col-md-8 pull-right">
                                         <input type="text" class="form-control" name="title" id="title"  value="<?= $list['title'] ?>">
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-12 col-sm-12 col-md-6">
-                                <div class="form-group">
-                                    <label class="col-xs-12 col-sm-4 col-md-4 pull-right control-label rtl"
-                                           for="brief_description">عنوان ماشین:</label>
-                                    <div class="col-xs-12 col-sm-8 col-md-8 pull-right">
-                                        <input type="text" class="form-control" name="brief_description" id="brief_description" value="<?= $list['brief_description'] ?>">
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
 
                         <div class="row xsmallSpace hidden-xs"></div>
@@ -68,7 +60,7 @@
                                 <div class="form-group">
 
                                     <div class="col-xs-12 col-sm-12 col-md-12 pull-right">
-                                        <h3>توضیح ماشین</h3>
+                                        <h3> توضیح مختصر</h3>
                                         <?php
 
                                         include_once ROOT_DIR.'common/ckeditor/ckeditor.php';
@@ -85,7 +77,7 @@
                                         $config['filebrowserUploadUrl'] = RELA_DIR.'common/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files';
                                         $config['filebrowserImageUploadUrl'] = RELA_DIR.'common/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files';
 
-                                        $tt = $ckeditor->editor('car_description',$list['car_description'],$config);
+                                        $tt = $ckeditor->editor('brief_description',$list['brief_description'],$config);
 
                                         echo $tt;
                                         ?>
@@ -186,19 +178,6 @@
 
                         </div>
 
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-6">
-                                <div class="form-group">
-                                    <label class="col-xs-12 col-sm-4 pull-right control-label rtl" for="xImagePath">تصویر سایز کوچک:</label>
-                                    <div class="col-xs-12 col-sm-8 pull-right">
-                                        <input type="file" class="form-control" name="imagesmall">
-
-                                        <img src="<?=RELA_DIR?>statics/services/small/<?=$list['image']?>" class="img-responsive">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
 
                         <div class="row">
@@ -206,7 +185,7 @@
                                 <p class="pull-right">
                                     <button type="submit" name="update" id="submit"
                                             class="btn btn-icon btn-success rtl"><input name="action" type="hidden" id="action" value="edit"/>
-                                        <input type="hidden" name="services_id" value="<?=$list['services_id']?>">
+                                        <input type="hidden" name="Services_id" value="<?=$list['Services_id']?>">
                                         <i class="fa fa-plus"></i>
                                         ثبت
                                     </button>

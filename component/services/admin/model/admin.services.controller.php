@@ -185,6 +185,16 @@ class adminServicesController
         $export=$services->fields;
 
 
+        /////// category
+        include_once(ROOT_DIR."component/category/admin/model/admin.category.model.php");
+        $category = new adminCategoryModel();
+
+        $resultCategory = $category->getCategoryOption();
+        if($resultCategory['result'] == 1)
+        {
+            $export['category'] = $category->list;
+        }
+
 
         $this->fileName='admin.services.editForm.php';
         $this->template($export,$msg);
@@ -195,7 +205,7 @@ class adminServicesController
      * @param $fields
      */
     public function editServices($fields)
-    {print_r_debug("ssssss");
+    {
         global $messageStack;
 
         if(!validator::required($fields['Services_id']) and !validator::Numeric($fields['Services_id']))
@@ -213,6 +223,9 @@ class adminServicesController
             $messageStack->add_session('message',$msg,'error');
             redirectPage(RELA_DIR . "admin/index.php?component=services", $msg);
         }
+
+
+        $fields['category_id'] = ','.implode(',',$fields['category_id']).',';
 
 
         $result=$services->setFields($fields);
@@ -241,7 +254,7 @@ class adminServicesController
             $this->showServicesEditForm($fields,$result['msg']);
         }
         $msg='عملیات با موفقیت انجام شد';
-        redirectPage(RELA_DIR . "admin/index.php?component=services", $msg);
+        redirectPage(RELA_DIR . "admin/index.php?component=services&action=editServices&id=".$fields['Services_id'], $msg);
         die();
     }
 
