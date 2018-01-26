@@ -29,7 +29,6 @@ switch ($_GET['action'])
 
         break;
     case 'addServices':
-        print_r_debug($_POST);
         if(isset($_POST['action']) & $_POST['action']=='add')
         {
 

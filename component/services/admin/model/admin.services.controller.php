@@ -102,7 +102,14 @@ class adminServicesController
      */
     public function showServicesAddForm($fields,$msg)
     {
+        include_once(ROOT_DIR."component/category/admin/model/admin.category.model.php");
+        $category = new adminCategoryModel();
 
+        $resultCategory = $category->getCategoryOption();
+        if($resultCategory['result'] == 1)
+        {
+            $fields['category'] = $category->list;
+        }
 
         $this->fileName='admin.services.addForm.php';
         $this->template($fields,$msg);
@@ -115,6 +122,7 @@ class adminServicesController
      */
     public function addServices($fields)
     {
+
         global $messageStack;
         $services=new adminServicesModel();
         $result=$services->setFields($fields);

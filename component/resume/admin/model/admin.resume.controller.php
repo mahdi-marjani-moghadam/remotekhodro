@@ -114,7 +114,8 @@ class adminServicesController
      * @return mixed
      */
     public function addServices($fields)
-    {
+    {        print_r_debug("asdasd");
+
         global $messageStack;
         $services=new adminServicesModel();
         $result=$services->setFields($fields);

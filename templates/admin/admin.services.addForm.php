@@ -38,7 +38,7 @@
 <div class="content-control">
     <!--control-nav-->
     <ul class="control-nav pull-right">
-        <li><a class="rtl text-24"><i class="fa fa-file-image-o"></i> افزودن مقاله جدید</a></li>
+        <li><a class="rtl text-24"><i class="fa fa-file-image-o"></i> افزودن سرویس جدید</a></li>
     </ul><!--/control-nav-->
 </div><!-- /content-control -->
 
@@ -46,7 +46,7 @@
 
     <div id="panel-tablesorter" class="panel panel-warning">
         <div class="panel-heading bg-white">
-            <h3 class="panel-title rtl">فرم مقاله</h3>
+            <h3 class="panel-title rtl">فرم سرویس</h3>
             <div class="panel-actions">
                 <button data-expand="#panel-tablesorter" title="" class="btn-panel rtl" data-original-title="تمام صفحه">
                     <i class="fa fa-expand"></i>
