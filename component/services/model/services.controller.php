@@ -18,6 +18,7 @@ class servicesController
     public function template($list = array(),$meta_keyword,$meta_description, $msg='')
     {
         // global $conn, $lang;
+        global $PARAM;
         switch ($this->exportType) {
             case 'html':
                 include ROOT_DIR.'templates/'.CURRENT_SKIN.'/title.inc.php';

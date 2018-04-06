@@ -97,7 +97,7 @@
 
 
         <div class="container clearfix">
-            <h1 class="rtl">نمونه کارها</h1>
+            <h2 class="rtl">نمونه کارها</h2>
             <div class="ltr">
                 <div  id="oc-posts" class="owl-carousel  posts-carousel carousel-widget" data-margin="20" data-nav="true" data-pagi="false" data-items-xxs="1" data-items-xs="2" data-items-sm="3" data-items-md="4">
 

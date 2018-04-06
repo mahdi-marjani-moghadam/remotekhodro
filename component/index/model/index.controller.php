@@ -180,8 +180,8 @@ class indexController
 //        print_r_debug($export['category']);
         //$export['banner'] = $banner['export']['list'];
         $this->fileName = "index.php";
-        $meta_keyword = 'معتبر ترین مرکز ساخت سوئیچ خودرو ایران ریموت';
-        $meta_description = '  معتبر ترین مرکز ساخت سوئیچ خودرو ، ساخت سوییچ خودرو ایران ریموت';
+        $meta_keyword = 'معتبر ترین مرکز ساخت سوئیچ خودرو ایران ریموت،ساخت کلید یدک،ساخت سوئیچ یدک،ساخت ریموت پژو';
+        $meta_description = '  معتبر ترین مرکز ساخت سوئیچ خودرو ، ساخت سوییچ خودرو ایران ریموت -  ساخت سوئیچ بنز،کیا،بی ام و، مزدا،تویوتا،هوندا،هیوندا - ساخت سوئیچ و ریموت';
 //      print_r_debug($export);
         $this->template(compact('export','meta_keyword','meta_description'));
         die();

@@ -54,8 +54,10 @@ class blogController
 
         $a = paginationButtom($blog['export']['recordsCount']);
         $export['pagination'] = $a['export']['list'];
+        $meta_keyword = 'نمونه کار،ساخت سوئیچ،ساخت ریموت،benz,bmw,honda,kia,mazda,peugeot,hyundai,mitsubishi';
+        $meta_description = 'نمونه کارهای ساخت سوئیچ و ریموت خودرو های مختلف';
         $this->fileName = 'blog.php';
-        $this->template($export);
+        $this->template($export,$meta_keyword,$meta_description);
     }
     public function showMore($_input)
     {

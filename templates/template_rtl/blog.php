@@ -24,15 +24,15 @@
 
                             <div class="entry-image">
 
-                                <a href="" data-lightbox="image"><img class="image_fade" src="<?=RELA_DIR?>statics/blog/<?=$v['image']?>" alt="Standard Post with Image"></a>
+                                <a href="" data-lightbox="image"><img class="image_fade" src="<?=RELA_DIR?>statics/blog/<?=$v['image']?>" alt="<?=$v['title']?>"></a>
                             </div>
                             <div class="entry-c">
                                 <div class="entry-title">
-                                    <h2><a href="blog-single.html"><?=$v['title']?></a></h2>
+                                    <h2><a href="<?=RELA_DIR?>blog/<?=$v['Blog_id']?>/<?=$v['title']?>"><?=$v['title']?></a></h2>
                                 </div>
                                 <div class="entry-content">
                                     <p><?=$v['description']?></p>
-                                    <a href="<?=RELA_DIR?>blog/<?=$v['Blog_id']?>/<?=$v['title']?>"class="more-link">Read More</a>
+                                    <a href="<?=RELA_DIR?>blog/<?=$v['Blog_id']?>/<?=$v['title']?>"class="more-link"> درباره <?=$v['title']?> بیشتر بدانید. </a>
                                 </div>
                             </div>
                         </div>

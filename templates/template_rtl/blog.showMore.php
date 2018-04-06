@@ -18,7 +18,7 @@
                     </div>
 
                     <div class="pricing-action-area">
-                        <img src="<?=RELA_DIR?>statics/blog/<?=$list['image']?>">
+                        <img src="<?=RELA_DIR?>statics/blog/<?=$list['image']?>" alt="<?=$list['title']?>">
                     </div>
 
                 </div>

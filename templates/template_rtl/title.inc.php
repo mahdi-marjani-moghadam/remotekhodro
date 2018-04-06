@@ -3,7 +3,9 @@
 <head>
 
 
-    <meta name="description" content="<?=$meta_description?>">
+
+    <meta name="description" content=" <?=$meta_description?>">
+
     <meta name="keywords" content="<?=$meta_keyword?>">
     <!-- Stylesheets
     ============================================= -->
@@ -32,7 +34,7 @@
 
     <!-- Document Title
     ============================================= -->
-    <title>ایران ریموت</title>
+    <title>ایران ریموت - <?=$meta_description?></title>
 
     <style>
 
@@ -68,7 +70,7 @@
 
 </head>
 
-<body class=" " >
+<body class="no-transition" >
 
 <!-- Document Wrapper
 ============================================= -->
@@ -90,7 +92,7 @@
 
                 <div id="logo">
                     <a href="<?=RELA_DIR?>" class="standard-logo" data-dark-logo="<?=TEMPLATE_DIR?>images/logo-dark@2x.png"><img src="<?=TEMPLATE_DIR?>images/logo-dark@2x.png" alt="نگین غرب مرکز ساخت سوئیچ خودرو"></a>
-                    <a href="<?=RELA_DIR?>" class="retina-logo" data-dark-logo="<?=TEMPLATE_DIR?>images/logo-dark@2x.png"><img src="<?=TEMPLATE_DIR?>images/logo-dark@2x.png" alt="Canvas Logo"></a>
+                    <a href="<?=RELA_DIR?>" class="retina-logo" data-dark-logo="<?=TEMPLATE_DIR?>images/logo-dark@2x.png"><img src="<?=TEMPLATE_DIR?>images/logo-dark@2x.png" alt="نگین غرب مرکز ساخت سوئیچ خودرو"></a>
                 </div>
 
                 <!-- Primary Navigation
