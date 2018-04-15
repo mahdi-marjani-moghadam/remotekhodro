@@ -1,7 +1,19 @@
+<?php
+ob_start("ob_gzhandler");
+?>
 <!DOCTYPE html>
 <html dir="rtl" lang="fa-IR">
 <head>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117456121-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-117456121-1');
+    </script>
 
 
     <meta name="description" content=" <?=$meta_description?>">
