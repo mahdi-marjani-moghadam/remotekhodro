@@ -193,7 +193,7 @@
                                     <div class="col-xs-12 col-sm-8 pull-right">
                                         <input type="file" class="form-control" name="imagesmall">
 
-                                        <img src="<?=RELA_DIR?>statics/blog/small/<?=$list['smallimage']?>" class="img-responsive">
+                                        <img src="<?=RELA_DIR?>statics/blog/small/<?=$list['imagesmall']?>" class="img-responsive">
 
                                     </div>
                                 </div>

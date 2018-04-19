@@ -163,7 +163,7 @@
                         <div class="form-group">
                             <label class="col-xs-12 col-sm-4 pull-right control-label rtl" for="Meta_description">meta description:</label>
                             <div class="col-xs-12 col-sm-8 pull-right">
-                                <input type="text" class="form-control" name="Meta_description"  id="Meta_description"  value="<?=$list['Meta_description']?>">
+                                <input type="text" class="form-control" name="meta_description"  id="meta_description"  value="<?=$list['meta_description']?>">
                             </div>
                         </div>
                     </div>
