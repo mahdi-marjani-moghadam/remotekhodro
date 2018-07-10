@@ -11,7 +11,7 @@
 
             <div class="entry-image">
                 <a href="<?=RELA_DIR?>services/<?=$cat['Category_id']?>/<?=$cat['alt_fa']?>" class="text-center" >
-                    <img class="image_fade" src="<?=RELA_DIR?><?=$cat['img_name']?>" alt="<?=$cat['alt_fa']?>">
+                    <img class="image_fade fix60" src="<?=RELA_DIR?><?=$cat['img_name']?>" alt="<?=$cat['alt_fa']?>">
                     <?=$cat['title_fa']?>
                 </a>
             </div>
@@ -38,12 +38,12 @@
                 <!-- Post Content
                 ============================================= -->
                 <div class="  ">
-                    <div id="portfolio" class="portfolio grid-container clearfix">
+                    <div id="portfolio" class="portfolio grid-container portfolio-3 clearfix">
                         <? foreach($list['services'] as $k => $v):?>
                         <article class="portfolio-item pf-media pf-icons">
                             <div class="portfolio-image">
-                                <a href="portfolio-single.html">
-                                    <img src="<?=RELA_DIR?>statics/services/<?=$v['image']?>" alt="<?=$v['title']?>">
+                                <a href="portfolio-single.html" class="top-fit">
+                                    <img class="fit" src="<?=RELA_DIR?>statics/services/<?=$v['image']?>" alt="<?=$v['title']?>">
                                 </a>
                                 <div class="portfolio-overlay">
                                     <a href="<?=RELA_DIR?>statics/services/<?=$v['image']?>" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
@@ -51,8 +51,8 @@
                                 </div>
                             </div>
                             <div class="portfolio-desc">
-                                <h3><a href="<?=RELA_DIR?>services/<?=$v['category_id']?>/<?=$v['Services_id']?>/<?=$v['title']?>"><?=$v['title']?></a></h3>
-                                <span><?=$v['brief_description']?></span>
+                                <h3><a class="small-font10" href="<?=RELA_DIR?>services/<?=$v['category_id']?>/<?=$v['Services_id']?>/<?=$v['title']?>"><?=$v['title']?></a></h3>
+                                <span class="text-fit100"><?=$v['brief_description']?></span>
                             </div>
                         </article>
                         <? endforeach;?>

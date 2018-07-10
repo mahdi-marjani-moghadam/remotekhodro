@@ -7,6 +7,12 @@ RewriteRule ^sitemap\.xml/?$ sitemap.php
 Header unset Pragma
 FileETag None
 Header unset ETag
+# font
+<FilesMatch "\.(ttf|otf|eot|woff|woff2)$">
+    <IfModule mod_headers.c>
+        Header set Access-Control-Allow-Origin "http://skin.cdn.com"
+    </IfModule>
+</FilesMatch>
 
 # cache images/pdf docs for 100 days
 <FilesMatch "\.(ico|pdf|jpg|jpeg|png|gif)$">

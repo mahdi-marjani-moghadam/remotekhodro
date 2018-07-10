@@ -152,7 +152,7 @@
                     <br>
                     <a href="https://goo.gl/maps/bYKuazB1iT62">لوکیشن ایران آنلاک</a>
 
-                    </h1></strong>
+                    </strong>
             </div>
 
 

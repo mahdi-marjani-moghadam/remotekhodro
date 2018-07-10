@@ -122,7 +122,7 @@ ob_start("ob_gzhandler");
                         <li <?=( $page == 'sales')?"class='current'":'';?> class="sub-menu"><a href="<?=RELA_DIR?>services/ساخت-سوئیچ-ساخت-سوییچ-ساخت-ریموت"><div>انواع خدمات<i class="icon-file-alt"></i> </div></a>
                         </li>
 
-                        <li <?=( $page == 'blog')?"class='current'":'';?> class="sub-menu"><a href="<?=RELA_DIR?>blog"><div>وبلاگ<i class="icon-file-alt"></i> </div></a>
+                        <li <?=( $page == 'blog')?"class='current'":'';?> class="sub-menu"><a href="<?=RELA_DIR?>blog"><div>نمونه کارها<i class="icon-file-alt"></i> </div></a>
                         </li>
                         <li <?=( $page == 'cv')?"class='current'":'';?>><a href="<?=RELA_DIR?>cv"><div>درخواست خرید<i class="icon-users2"></i></div></a></li>
 

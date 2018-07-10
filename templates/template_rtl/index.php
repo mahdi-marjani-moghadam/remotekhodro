@@ -14,7 +14,7 @@
 
                     <div class="entry-image">
                         <a href="<?=RELA_DIR?>services/<?=$cat['Category_id']?>/<?=$cat['alt_fa']?>" class="text-center" >
-                            <img class="image_fade" src="<?=RELA_DIR?><?=$cat['img_name']?>" alt="<?=$cat['alt_fa']?>">
+                            <img class="image_fade fix60" src="<?=RELA_DIR?><?=$cat['img_name']?>" alt="<?=$cat['alt_fa']?>">
                             <?=$cat['title_fa']?>
                         </a>
                     </div>
@@ -107,7 +107,9 @@
                         <div style="direction: rtl" class="oc-item">
                             <div class="ipost clearfix">
                                 <div class="entry-image">
-                                    <a href="<?=RELA_DIR?>blog/<?=$v['Blog_id']?>/<?=$v['title']?>" ><img class="image_fade" src="<?=RELA_DIR?>statics/blog/small/<?=$v['imagesmall']?>"  alt="<?=$v['title']?>"></a>
+                                    <a class="top-fit" href="<?=RELA_DIR?>blog/<?=$v['Blog_id']?>/<?=$v['title']?>" >
+                                        <img class="image_fade fit"  src="<?=RELA_DIR?>statics/blog/small/<?=$v['imagesmall']?>"  alt="<?=$v['title']?>">
+                                    </a>
                                 </div>
                                 <div class="entry-title">
                                     <h3><a href="<?=RELA_DIR?>blog/<?=$v['Blog_id']?>/<?=$v['title']?>"><?=$v['title']?></a></h3>
