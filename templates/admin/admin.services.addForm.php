@@ -196,8 +196,8 @@
                                     <div class="col-xs-12 col-sm-8 pull-right">
                                         <div class="input-group" dir="ltr">
                                             <input type="file" class="form-control" name="image" >
-
-                                            <img src="<?=RELA_DIR?>statics/services/<?=$list['image']?>" class="img-responsive">
+                                            <input type="file" class="form-control" name="image2" >
+                                            <input type="file" class="form-control" name="image3" >
                                         </div>
 
 

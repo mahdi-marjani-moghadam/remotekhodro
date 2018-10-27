@@ -159,18 +159,28 @@
                         </div>
                         <div class="row xsmallSpace hidden-xs"></div>
                         <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-6">
+                            <div class="col-xs-12 col-sm-12 col-md-12">
                                 <div class="form-group">
-                                    <label class="col-xs-12 col-sm-4 pull-right control-label rtl"
+                                    <label class="col-xs-12 col-md-12 col-sm-12 pull-right control-label rtl"
                                            for="xImagePath">تصویر:</label>
-                                    <div class="col-xs-12 col-sm-8 pull-right">
-                                        <div class="input-group" dir="ltr">
+                                    <div class="col-md-4 col-sm-4  ">
+
                                             <input type="file" class="form-control" name="image" >
-
                                             <img src="<?=RELA_DIR?>statics/services/<?=$list['image']?>" class="img-responsive">
-                                        </div>
 
+                                    </div>
+                                    <div class="col-md-4 col-sm-4">
 
+                                            <input type="file" class="form-control" name="image2" >
+                                            <img src="<?=RELA_DIR?>statics/services/<?=$list['image2']?>" class="img-responsive">
+                                            <input name="alt2" class="form-control" value="<?=$list['alt2']?>">
+
+                                    </div>
+                                    <div class="col-md-4 col-sm-4">
+
+                                        <input type="file" class="form-control" name="image3" >
+                                        <img src="<?=RELA_DIR?>statics/services/<?=$list['image3']?>" class="img-responsive">
+                                        <input name="alt3" class="form-control" value="<?=$list['alt3']?>">
 
                                     </div>
                                 </div>

@@ -157,7 +157,34 @@ class adminServicesController
             $services->image = $result['image_name'];
             $result = $services->save();
         }
+        if(file_exists($_FILES['image2']['tmp_name'])){
 
+            $input['upload_dir'] = ROOT_DIR.'statics/services/';
+            $result = fileUploader($input,$_FILES['image2']);
+            if($result['result'] == -1)
+            {
+                $messageStack->add_session('message',$result['msg'],'error');
+                redirectPage(RELA_DIR . "admin/index.php?component=services", $result['msg']);
+            }
+
+            $services->image2 = $result['image_name'];
+            $result = $services->save();
+        }
+        if(file_exists($_FILES['image3']['tmp_name'])){
+
+            $type  = explode('/',$_FILES['image3']['type']);
+
+            $input['upload_dir'] = ROOT_DIR.'statics/services/';
+            $result = fileUploader($input,$_FILES['image3']);
+            if($result['result'] == -1)
+            {
+                $messageStack->add_session('message',$result['msg'],'error');
+                redirectPage(RELA_DIR . "admin/index.php?component=services", $result['msg']);
+            }
+
+            $services->image3 = $result['image_name'];
+            $result = $services->save();
+        }
 
         if($result['result']!='1')
         {
@@ -256,7 +283,32 @@ class adminServicesController
 
             $result = $services->save();
         }
+        if(file_exists($_FILES['image2']['tmp_name'])){
 
+            $input['upload_dir'] = ROOT_DIR.'statics/services/';
+            $result = fileUploader($input,$_FILES['image2']);
+            if($result['result'] == -1)
+            {
+                $messageStack->add_session('message',$result['msg'],'error');
+                redirectPage(RELA_DIR . "admin/index.php?component=services", $result['msg']);
+            }
+
+            $services->image2 = $result['image_name'];
+            $result = $services->save();
+        }
+        if(file_exists($_FILES['image3']['tmp_name'])){
+
+            $input['upload_dir'] = ROOT_DIR.'statics/services/';
+            $result = fileUploader($input,$_FILES['image3']);
+            if($result['result'] == -1)
+            {
+                $messageStack->add_session('message',$result['msg'],'error');
+                redirectPage(RELA_DIR . "admin/index.php?component=services", $result['msg']);
+            }
+
+            $services->image3 = $result['image_name'];
+            $result = $services->save();
+        }
         if($result['result']!='1')
         {
             $this->showServicesEditForm($fields,$result['msg']);
