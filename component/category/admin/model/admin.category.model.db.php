@@ -178,7 +178,7 @@ class adminCategoryModelDb
 
     }
 
-    function tree_set($where='')
+    static function tree_set($where='')
     {
         $conn = dbConn::getConnection();
         if($where !='')

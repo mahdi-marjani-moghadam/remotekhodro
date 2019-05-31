@@ -16,12 +16,13 @@ class blogController
     {
         $this->exportType = 'html';
     }
-    public function template($list = [],$meta_keyword,$meta_description, $msg)
+    public function template($list = array(), $msg='')
     {
 
         // global $conn, $lang;
         switch ($this->exportType) {
             case 'html':
+                extract($list, EXTR_SKIP);
                 include ROOT_DIR.'templates/'.CURRENT_SKIN.'/title.inc.php';
                 include ROOT_DIR.'templates/'.CURRENT_SKIN."/$this->fileName";
                 include ROOT_DIR.'templates/'.CURRENT_SKIN.'/tail.inc.php';
@@ -54,10 +55,12 @@ class blogController
 
         $a = paginationButtom($blog['export']['recordsCount']);
         $export['pagination'] = $a['export']['list'];
-        $meta_keyword = 'نمونه کار،ساخت سوئیچ،ساخت ریموت،benz,bmw,honda,kia,mazda,peugeot,hyundai,mitsubishi';
-        $meta_description = 'نمونه کارهای ساخت سوئیچ و ریموت خودرو های مختلف';
+
+        $title = 'نمونه کار ساخت سوئیچ و ریموت بی ام و ، بنز، هیوندا ،‌ مزدا ، کیا ، رنو ، پورشه' .' | '.'ایران ریموت';
+        $meta_description = 'نمونه کارهای ساخت سوئیچ و ریموت خودرو های بی ام و ، بنز، هیوندا ،‌ مزدا ، کیا ، رنو ، پورشه در تهران ۲۴ ساعته';
+
         $this->fileName = 'blog.php';
-        $this->template($export,$meta_keyword,$meta_description);
+        $this->template(compact('export','title','meta_description'));
     }
     public function showMore($_input)
     {
@@ -85,10 +88,13 @@ class blogController
         $breadcrumb->add('بنر');
         $breadcrumb->add($blog['list']['title']);
         $export['breadcrumb'] = $breadcrumb->trail();*/
-        $meta_keyword = $result->fields['meta_keywords'];
+
+        $title = $result->fields['meta_title'];
         $meta_description = $result->fields['meta_description'];
+        $export = $result->fields;
+
         $this->fileName = 'blog.showMore.php';
-        $this->template($result->fields,$meta_keyword,$meta_description);
+        $this->template(compact('export','title','meta_description'));
         die();
     }
 

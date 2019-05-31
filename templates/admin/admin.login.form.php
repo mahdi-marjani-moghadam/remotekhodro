@@ -9,7 +9,7 @@
                         <div class="signin">
                             <div class="signin-brand text-center">
                                 <a href="<?php echo RELA_DIR;?>login.php">
-                                    <img class="lazy" data-original="<?php echo RELA_DIR;?>templates/<?php echo CURRENT_SKIN; ?>/images/logo@2x.png" alt="Sign In">
+                                    <img class="lazy" data-original="<?php echo RELA_DIR;?>templates/<?php echo CURRENT_SKIN; ?>/images/logo-dark@2x.jpg" alt="Sign In">
                                 </a>
                             </div><!--/signin-brand-->
 

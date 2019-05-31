@@ -1,16 +1,18 @@
-<div class="row topmargin-lg bottommargin-sm">
+<div class="container clearfix">
+
+<div class="row topmargin-sm bottommargin-sm">
     <div class="fancy-title title-dotted-border title-center">
-        <h1 class="">قیمت و نحوه ساخت سوئیچ و ریموت خودرو </h1>
+        <h1>قیمت و نحوه ساخت سوئیچ و ریموت خودرو </h1>
     </div>
 
     <?php
 
-    foreach ($list['category'] as $k => $cat):
+    foreach ($export['category'] as $k => $cat):
         ?>
         <div class="col-lg-1 col-sm-1 col-xs-4">
 
             <div class="entry-image">
-                <a href="<?=RELA_DIR?>services/<?=$cat['Category_id']?>/<?=$cat['alt_fa']?>" class="text-center" >
+                <a href="<?=RELA_DIR?>services/<?=$cat['Category_id']?>/<?=$cat['url']?>" class="text-center" >
                     <img class="image_fade fix60" src="<?=RELA_DIR?><?=$cat['img_name']?>" alt="<?=$cat['alt_fa']?>">
                     <?=$cat['title_fa']?>
                 </a>
@@ -39,7 +41,7 @@
                 ============================================= -->
                 <div class="  ">
                     <div id="portfolio" class="portfolio grid-container portfolio-3 clearfix">
-                        <? foreach($list['services'] as $k => $v):?>
+                        <? foreach($export['services'] as $k => $v):?>
                         <article class="portfolio-item pf-media pf-icons">
                             <div class="portfolio-image">
                                 <a href="portfolio-single.html" class="top-fit">
@@ -72,3 +74,4 @@
 
 
     </section><!-- #content end -->
+</div>

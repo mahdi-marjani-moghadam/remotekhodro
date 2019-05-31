@@ -79,14 +79,6 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xs-12 col-sm-12 col-md-6">
-                <div class="form-group">
-                  <label class="col-xs-12 col-sm-4 pull-right control-label rtl" for="brief_description">نام  ماشین:</label>
-                  <div class="col-xs-12 col-sm-8 pull-right">
-                    <input type="text" class="form-control" name="brief_description"  id="brief_description"  value="<?=$list['brif_description']?>">
-                  </div>
-                </div>
-              </div>
             </div>
             <div class="row xsmallSpace hidden-xs"></div>
             <div class="row">
@@ -153,9 +145,10 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6">
                         <div class="form-group">
-                            <label class="col-xs-12 col-sm-4 pull-right control-label rtl" for="meta_keywords">Meta keyword:</label>
-                            <div class="col-xs-12 col-sm-8 pull-right">
-                                <input type="text" class="form-control" name="meta_keywords" id="meta_keywords"   value="<?=$list['meta_keywords']?>">
+                            <label class="col-xs-12 col-sm-4 col-md-4 pull-right control-label rtl"
+                                   for="meta_title">title :</label>
+                            <div class="col-xs-12 col-sm-8 col-md-8 pull-right">
+                                <input type="text" class="form-control" name="meta_title" id="meta_title"  value="<?= $list['meta_title'] ?>">
                             </div>
                         </div>
                     </div>

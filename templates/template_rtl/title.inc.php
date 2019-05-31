@@ -16,9 +16,9 @@ ob_start("ob_gzhandler");
     </script>
 
 
-    <meta name="description" content=" <?=$meta_description?>">
 
-    <meta name="keywords" content="<?=$meta_keyword?>">
+
+    <meta name="description" content=" <?=$meta_description?>">
     <!-- Stylesheets
     ============================================= -->
     <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/bootstrap.css" type="text/css" />
@@ -43,10 +43,11 @@ ob_start("ob_gzhandler");
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="<?=TEMPLATE_DIR?>images/favicon.png"/>
 
     <!-- Document Title
     ============================================= -->
-    <title>ایران ریموت - <?=$meta_description?></title>
+    <title><?=$title?></title>
 
     <style>
 
@@ -103,9 +104,10 @@ ob_start("ob_gzhandler");
 
 
                 <div id="logo">
-                    <a href="<?=RELA_DIR?>" class="standard-logo" data-dark-logo="<?=TEMPLATE_DIR?>images/logo-dark@2x.png"><img src="<?=TEMPLATE_DIR?>images/logo-dark@2x.png" alt="نگین غرب مرکز ساخت سوئیچ خودرو"></a>
-                    <a href="<?=RELA_DIR?>" class="retina-logo" data-dark-logo="<?=TEMPLATE_DIR?>images/logo-dark@2x.png"><img src="<?=TEMPLATE_DIR?>images/logo-dark@2x.png" alt="نگین غرب مرکز ساخت سوئیچ خودرو"></a>
+                    <a href="<?=RELA_DIR?>" class="standard-logo" data-dark-logo="<?=TEMPLATE_DIR?>images/logo-dark@2x.jpg"><img src="<?=TEMPLATE_DIR?>images/logo-dark@2x.jpg" alt="ایران ریموت مرکز ساخت سوئیچ خودرو"></a>
+                    <a href="<?=RELA_DIR?>" class="retina-logo" data-dark-logo="<?=TEMPLATE_DIR?>images/logo-dark@2x.jpg"><img src="<?=TEMPLATE_DIR?>images/logo-dark@2x.jpg" alt="ایران ریموت مرکز ساخت سوئیچ خودرو"></a>
                 </div>
+
 
                 <!-- Primary Navigation
                 ============================================= -->
@@ -119,7 +121,7 @@ ob_start("ob_gzhandler");
 
                         </li>
 
-                        <li <?=( $page == 'sales')?"class='current'":'';?> class="sub-menu"><a href="<?=RELA_DIR?>services/ساخت-سوئیچ-ساخت-سوییچ-ساخت-ریموت"><div>انواع خدمات<i class="icon-file-alt"></i> </div></a>
+                        <li <?=( $page == 'services')?"class='current'":'';?> class="sub-menu"><a href="<?=RELA_DIR?>services/<?=SERVICES_SLUG?>"><div>انواع خدمات<i class="icon-file-alt"></i> </div></a>
                         </li>
 
                         <li <?=( $page == 'blog')?"class='current'":'';?> class="sub-menu"><a href="<?=RELA_DIR?>blog"><div>نمونه کارها<i class="icon-file-alt"></i> </div></a>

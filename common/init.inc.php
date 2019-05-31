@@ -1,8 +1,8 @@
 <?php
 
-error_reporting(1);
-error_reporting(E_ALL ^ E_STRICT ^ E_NOTICE ^ E_DEPRECATED ^ E_WARNING);
+error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING ^ E_DEPRECATED);
 ini_set('display_errors',1);
+//echo "<pre>";
 
 $db = dbConn::getConnection();
 
@@ -46,7 +46,7 @@ if(isset($_REQUEST['lang']))
 
 }
 
-if($_SESSION['lang'] == "" || !isset($_SESSION['lang']) || $_SESSION['lang']!='en')
+if(isset($_SESSION['lang']) && $_SESSION['lang'] == "" || !isset($_SESSION['lang']) || $_SESSION['lang']!='en')
 {
     $_SESSION['lang'] ='fa'; // WEBSITE_LANGUAGE;
 }
@@ -54,14 +54,18 @@ $_SESSION['lang'] ='fa'; // WEBSITE_LANGUAGE;
 
 $lang = $_SESSION['lang'];
 
-if($_REQUEST['color'] == 'white') { unset($_SESSION['themeColor']); header("location: ".RELA_DIR);  }
-elseif($_REQUEST['color'] == 'black'){ $_SESSION['themeColor'] = '_black';  header("location: ".RELA_DIR);}
+if(isset($_REQUEST['color']) && $_REQUEST['color'] == 'white') { unset($_SESSION['themeColor']); header("location: ".RELA_DIR);  }
+elseif( isset($_REQUEST['color']) && $_REQUEST['color'] == 'black'){ $_SESSION['themeColor'] = '_black';  header("location: ".RELA_DIR);}
 
 
-
+$cs = '';
 if($lang == 'en'){$cs = "template_ltr";}
-else{$cs = "template_rtl{$_SESSION['themeColor']}";}
+else{  $cs =  "template_rtl{$_SESSION['themeColor']}";}
+
 define('CURRENT_SKIN',$cs);
+define('SERVICES_SLUG','خدمات-ساخت-سوئیچ-ساخت-ریموت');
+
+
 
 define('TEMPLATE_DIR',RELA_DIR."templates/".CURRENT_SKIN."/");
 define('Count_Permission','20');

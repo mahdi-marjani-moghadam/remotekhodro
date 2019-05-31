@@ -213,6 +213,7 @@ function redirectPage($page, $message = '')
         </script>
         <style>
             body {
+                direction: rtl;
                 font-family: sans-serif;
                 background: url(<?=TEMPLATE_DIR?>images/background.png);
                 line-height: 30px;
@@ -224,34 +225,35 @@ function redirectPage($page, $message = '')
                 width: 500px;
                 margin-top: 10%;
                 position: relative;
-                padding-left: 200px;
-                text-align: left;
+                padding-right: 200px;
+                text-align: right;
                 border-radius: 5px;
                 -moz-border-radius: 5px;
                 -o-border-radius: 5px;
                 -webkit-border-radius: 5px;
+                padding-top: 25px;
             }
 
             a {
                 color: #990033;
                 font-size: 14px;
+
             }
         </style>
     </head>
     <body>
     <center>
         <div class="a">
-            <?php
+            <img src="<?php echo RELA_DIR . 'templates/' . CURRENT_SKIN . '/images/logo-dark@2x.jpg' ?> "
+                  style="position:absolute; right:40px; " height="60">
 
-            echo $message;
+                <?php echo $message; ?>
 
-            ?>
-            <img src="<?php echo RELA_DIR . 'templates/' . CURRENT_SKIN . '/images/logo@2x.png' ?> "
-                 align="left" style="position:absolute; left:40px;padding-top:15px; " height="60">
+
             <div style="clear:both"></div>
             <a href="<?= $page ?>">در صورت عدم ارسال اتوماتیک کلیک نمایید </a>
 
-            <small>Loding ...</small>
+            <small>در حال بارگذاری ...</small>
             <div style="clear:both"></div>
             <br>
         </div>

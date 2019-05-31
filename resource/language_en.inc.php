@@ -308,7 +308,7 @@ define("Admin_060", "Companies payments report");
 define("Admin_061", "Report of the number of user connections in the system");
 define("Admin_062", "Companies Message");
 define("Admin_063", "Modify the text of sent messages");
-define("Admin_064", "Mobile users");
+
 
 //admin.index.php Admin page
 define("Admin_030", "Users");
@@ -332,6 +332,7 @@ define("Admin_069", "Now the user is inactive.");
 define("Admin_070", "Editing was not done.");
 define("Admin_071", "Menu price list");
 define("Admin_072", "Adding company menu");
+define("Admin_073", "Mobile users");
 
 define("Company_001", "Row");
 define("Company_002", "Company's English name");

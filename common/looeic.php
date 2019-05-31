@@ -274,7 +274,7 @@ class looeic
         return $this->get_object_or_list(1);
     }
 
-    function getList($fields)
+    function getList($fields=array())
     {
         if(strlen($this->sql)<1)
         {
@@ -486,7 +486,7 @@ class looeic
         return $result;
     }
 
-    public function getByFilter($fields='',$query)
+    public function getByFilter($fields=array(),$query='')
     {
         //$obj->TABLE_NAME=get_called_class();
 
@@ -683,7 +683,7 @@ class looeic
         return $result;
 
     }
-    private function updateModel($fields)
+    private function updateModel($fields=array())
     {
         $sql_key='';
         $sql_val='';

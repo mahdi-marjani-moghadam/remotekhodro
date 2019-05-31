@@ -53,7 +53,9 @@ class indexController
         {
             case 'html':
                 extract($list, EXTR_SKIP);
+
                 include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/title.inc.php");
+
                 include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/$this->fileName");
 
                 include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/tail.inc.php");
@@ -122,8 +124,9 @@ class indexController
      * @date 2/28/2016
      * @version 01.01.02
      */
-    public function showALL($fields)
+    public function showALL($fields=array())
     {
+
 
         //use category model func by getCategoryUlLi
         /*include_once(ROOT_DIR."component/category/model/category.model.php");
@@ -140,7 +143,8 @@ class indexController
         include_once(ROOT_DIR."component/banner/model/banner.model.php");
         $banner = new bannerModel();
 
-        $fields['order']['priority']='ASC';
+        $fields['order']['priority'] = 'ASC';
+
         $banner = $banner->getByFilter($fields);
         $export['banner'] = $banner['export']['list'];
 
@@ -152,6 +156,8 @@ class indexController
         $fields2['order']['Blog_id'] = 'ASC';
         $blog = $blog->getByFilter($fields2);
         $export['blog'] = $blog['export']['list'];
+
+
 
        /* include_once(ROOT_DIR."component/team/model/team.model.php");
         $team = new teamModel();
@@ -180,10 +186,13 @@ class indexController
 //        print_r_debug($export['category']);
         //$export['banner'] = $banner['export']['list'];
         $this->fileName = "index.php";
-        $meta_keyword = 'معتبر ترین مرکز ساخت سوئیچ خودرو ایران ریموت،ساخت کلید یدک،ساخت سوئیچ یدک،ساخت ریموت پژو';
-        $meta_description = '  معتبر ترین مرکز ساخت سوئیچ خودرو ، ساخت سوییچ خودرو ایران ریموت -  ساخت سوئیچ بنز،کیا،بی ام و، مزدا،تویوتا،هوندا،هیوندا - ساخت سوئیچ و ریموت';
-//      print_r_debug($export);
-        $this->template(compact('export','meta_keyword','meta_description'));
+
+        $title = 'ساخت ریموت و ساخت سوئیچ | مرکز تخصصی ایران ریموت';
+        $meta_description = 'ساخت سوئیچ، پروگرام، تعریف، تعمیر و کددهی ریموت انواع خودرو بنز،کیا،بی ام و، مزدا،تویوتا،هوندا،هیوندا،پورشه - نمونه سوئیچ و ریموت ما را مشاهده نمایید.';
+
+//        print_r_debug(strlen($meta_description)/2);
+
+        $this->template(compact('export','title','meta_description'));
         die();
 
     }

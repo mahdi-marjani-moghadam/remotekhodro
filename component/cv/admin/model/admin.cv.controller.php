@@ -40,7 +40,7 @@ class adminCvController
      * @param $msg
      * @return string
      */
-    function template($list = array(), $msg)
+    function template($list = array(), $msg='')
     {
         // global $conn, $lang;
 
@@ -101,7 +101,7 @@ class adminCvController
     /**
      * @param $fields
      */
-    public function showList($fields, $msg)
+    public function showList($fields=array(), $msg='')
     {
         $cv = adminCvModel::getAll()->getList();
         if($cv['result']!='1')

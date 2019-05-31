@@ -78,32 +78,20 @@
         <!-- Footer Widgets
         ============================================= -->
         <div class="footer-widgets-wrap clearfix" style="direction: rtl;">
-            <div class="col_one_fourth ">
 
-                <div class="widget quick-contact-widget clearfix">
-                    <img src="<?php echo TEMPLATE_DIR; ?>/images/logo-dark.png" alt="ساخت ریموت" class="footer-logo">
-
-                    <p> بهترینها را از ما بخواهید</p>
-
-
-
-
-                </div>
-
-            </div>
-            <div class="col_one_fourth" style="direction: rtl;">
+            <div class="col_one_fourth" >
 
                 <div class="widget clearfix">
 
 
                     <div class="clearfix" style="padding: 0; ">
 
-                        <div class="col_full col_last">
+
                             <strong>اینستاگرام:</strong><span dir="ltr"><a href="http://instagram.com/iranunlocks/" target="_top">iranunlocks</a>
 
   </span><br>
                             <strong>ایمیل:</strong><span dir="ltr"> info@Remotekhodro.com </span>
-                        </div>
+
                     </div><br>
 <div>ما را در شبکه های اجتماعی دنبال کنید</div>
                     <!--<a href="https://www.facebook.com/remotekhodro/" class="social-icon si-small si-rounded topmargin-sm si-facebook">
@@ -111,10 +99,10 @@
                         <i class="icon-facebook"></i>
                     </a>-->
 
-                    <a href="https://telegram.me/remotekhodro" class="social-icon si-small si-rounded topmargin-sm si-twitter">
+                    <!--<a href="https://telegram.me/remotekhodro" class="social-icon si-small si-rounded topmargin-sm si-twitter">
                         <i class="icon-email2"></i>
                         <i class="icon-email2"></i>
-                    </a>
+                    </a>-->
 
                     <!--<a href="www.youtube.com/" class="social-icon si-small si-rounded topmargin-sm si-youtube">
                         <i class="icon-youtube"></i>
@@ -139,9 +127,7 @@
                 </div>
 
             </div>
-
-
-            <div class=" col_half col_last" style="direction: rtl;">
+            <div class="col_three_fourth col_last" >
                 <strong>
                     تلفن های تماس:
 <br>
@@ -164,22 +150,16 @@
     <!-- Copyrights
     ============================================= -->
     <div id="copyrights">
-
         <div class="container clearfix">
-
-            <div class="col_full nobottommargin center">
+            <div class="col_full nobottommargin center rtl">
                 <div class="copyrights-menu copyright-links clearfix">
                     <a href="<?=RELA_DIR?>">خانه</a>/<a href="<?=RELA_DIR?>product">محصولات</a>/<a href="<?=RELA_DIR?>contactus">تماس با ما</a>
                 </div>
-
-                <br>
-                <div style="font-size: 8px; "><a style="color: #ccc" href="http://www.webgem.ir" target="_blank">Powered By WebGem</a></div>
             </div>
 
         </div>
 
     </div><!-- #copyrights end -->
-
 </footer><!-- #footer end -->
 
 </div><!-- #wrapper end -->

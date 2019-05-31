@@ -81,7 +81,7 @@
                     ?>
                         <tr>
                             <td><?php echo $fields['dataTableCount']; ?></td>
-                            <td><img class="image_fade" src="<?=RELA_DIR?><?=$fields['img_name']?>" alt="<?=$fields['alt_fa']?>"></td>
+                            <td><img width="100" class="image_fade" src="<?=RELA_DIR?><?=$fields['img_name']?>" alt="<?=$fields['alt_fa']?>"></td>
                             <td><?php echo $fields['export']; ?></td>
                             <td><?php echo $fields['url']; ?></td>
                             <td><?php echo $fields['meta_keyword']; ?></td>

@@ -15,6 +15,8 @@ if (isset($exportType)) {
     $indexController->exportType = $exportType;
 }
 
-$indexController->showALL($fields);
+
+
+$indexController->showALL();
 
 ?>

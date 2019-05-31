@@ -1,5 +1,4 @@
 
-
 RewriteEngine On
 
 RewriteRule ^sitemap\.xml/?$ sitemap.php
@@ -48,11 +47,11 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php?$1
 
-RewriteCond %{HTTP_HOST} !^www.remotekhodro.com$ [NC]
-RewriteRule ^(.*)$ http://www.remotekhodro.com/$1 [L,R=301]
+#RewriteCond %{HTTP_HOST} !^www.remotekhodro.com$ [NC]
+#RewriteRule ^(.*)$ http://www.remotekhodro.com/$1 [L,R=301]
 
 <IfModule mod_deflate.c>
-AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css         application/x-javascript application/javascript
+AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css   application/x-javascript application/javascript
 </IfModule>
 
 #RewriteEngine On RewriteBase / RewriteCond %{HTTP_HOST} ^www.remotekhodro.com [NC] RewriteRule ^(.*)$
