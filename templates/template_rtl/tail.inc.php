@@ -153,7 +153,7 @@
         <div class="container clearfix">
             <div class="col_full nobottommargin center rtl">
                 <div class="copyrights-menu copyright-links clearfix">
-                    <a href="<?=RELA_DIR?>">خانه</a>/<a href="<?=RELA_DIR?>product">محصولات</a>/<a href="<?=RELA_DIR?>contactus">تماس با ما</a>
+                    <a href="<?=RELA_DIR?>">خانه</a>/<a href="<?=RELA_DIR?>contactus">تماس با ما</a>
                 </div>
             </div>
 

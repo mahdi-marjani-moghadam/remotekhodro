@@ -7,30 +7,34 @@
                 </div>
 
                 <div class="cat-item clearfix">
-                <?php
-                foreach ($export['category'] as $k => $cat):
-                ?>
-                <div class="col-lg-1 col-sm-1 col-xs-4">
+                    <?php
+                    foreach ($export['category'] as $k => $cat):
+                    ?>
+                        <div class="col-lg-1 col-sm-1 col-xs-4">
 
-                    <div class="entry-image">
-                        <a href="<?=RELA_DIR?>services/<?=$cat['Category_id']?>/<?=$cat['url']?>" class="text-center" >
-                            <img class="image_fade fix60" src="<?=RELA_DIR?><?=$cat['img_name']?>" alt="<?=$cat['alt_fa']?>">
-                            <?=$cat['title_fa']?>
-                        </a>
+                            <div class="entry-image">
+                                <a href="<?=RELA_DIR?>services/<?=$cat['Category_id']?>/<?=$cat['url']?>" class="text-center" >
+                                    <img class="image_fade fix60" src="<?=RELA_DIR?><?=$cat['img_name']?>" alt="<?=$cat['alt_fa']?>">
+                                    <?=$cat['title_fa']?>
+                                </a>
+                            </div>
+
+                        </div>
+                    <?php
+                    endforeach;
+                    ?>
+                </div>
+
+
+                <div class="col-md-12 col-sm-12 col-xs-12 rtl text-center" >
+                    <div class="fancy-title title-dotted-border title-center">
+                        <h2 >درباره مرکز ایران ریموت</h2>
                     </div>
+                    موسسه ایران ریموت متخصص در زمینه ساخت و پروگرام ریموت و سوئیچ با سابقه ای بالا توانسته خدمات تعمیر، تعویض، کددهی، کپی کلید یدک انواع خودرو را در کمترین زمان برای تمامی شهر های ایران ارائه دهد.
+
+                    <div class="clearfix"><br></div>
 
                 </div>
-                <?php
-                endforeach;
-                ?>
-                </div>
-
-
-
-
-
-                </div>
-
                 <div class="col-md-4 col-sm-6 bottommargin rtl">
 
                     <div class="feature-box fbox-right topmargin fadeIn animated" data-animate="fadeIn">
