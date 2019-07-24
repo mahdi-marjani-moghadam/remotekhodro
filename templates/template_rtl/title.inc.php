@@ -6,15 +6,14 @@ ob_start("ob_gzhandler");
 <head>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117456121-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137723846-5"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'UA-117456121-1');
+        gtag('config', 'UA-137723846-5');
     </script>
-
 
 
 
@@ -92,8 +91,15 @@ ob_start("ob_gzhandler");
 
     <!-- Header
     ============================================= -->
+    <?
+    $temp = explode('/',$_SERVER['QUERY_STRING']);
+    $page = $temp[0] ?>
 
-
+    <? if($admin_info!= -1 && $page == 'services' && is_numeric($temp[2]) ):?>
+    <section style="background: #323232; padding: 10px; " class="text-center">
+        <a class="btn btn-warning" href="<?=RELA_DIR?>admin/index.php?component=services&action=editServices&id=<?=$temp[2]?>">ویرایش</a>
+    </section>
+    <? endif;?>
     <header id="header">
 
         <div id="header-wrap" style="direction: rtl;">
@@ -112,9 +118,7 @@ ob_start("ob_gzhandler");
                 <!-- Primary Navigation
                 ============================================= -->
                 <nav id="primary-menu" class="style-3" style="direction: ltr;">
-                    <?
-                    $temp = explode('/',$_SERVER['QUERY_STRING']);
-                    $page = $temp[0] ?>
+
                     <ul class="norightborder norightpadding norightmargin">
                         <li <?=( $page == '' || $page == 'index')?"class='current'":'';?>><a href="<?=RELA_DIR?>"><div>صفحه اصلی<i class="icon-home2"></i></div></a>
 
