@@ -1,76 +1,5 @@
 <!-- Footer
 ============================================= -->
-<? /*<footer id="footer" class="dark">
-
-    <div class="container">
-
-
-    </div>
-
-    <!-- Copyrights
-    ============================================= -->
-    <div id="copyrights">
-
-        <div class="container clearfix">
-
-            <div class="col_half">
-                Copyrights &copy; 2014 All Rights Reserved by Canvas Inc.<br>
-                <div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
-            </div>
-
-            <div class="col_half col_last tright">
-                <div class="fright clearfix">
-                    <a href="#" class="social-icon si-small si-borderless si-facebook">
-                        <i class="icon-facebook"></i>
-                        <i class="icon-facebook"></i>
-                    </a>
-
-                    <a href="#" class="social-icon si-small si-borderless si-twitter">
-                        <i class="icon-twitter"></i>
-                        <i class="icon-twitter"></i>
-                    </a>
-
-                    <a href="#" class="social-icon si-small si-borderless si-gplus">
-                        <i class="icon-gplus"></i>
-                        <i class="icon-gplus"></i>
-                    </a>
-
-                    <a href="#" class="social-icon si-small si-borderless si-pinterest">
-                        <i class="icon-pinterest"></i>
-                        <i class="icon-pinterest"></i>
-                    </a>
-
-                    <a href="#" class="social-icon si-small si-borderless si-vimeo">
-                        <i class="icon-vimeo"></i>
-                        <i class="icon-vimeo"></i>
-                    </a>
-
-                    <a href="#" class="social-icon si-small si-borderless si-github">
-                        <i class="icon-github"></i>
-                        <i class="icon-github"></i>
-                    </a>
-
-                    <a href="#" class="social-icon si-small si-borderless si-yahoo">
-                        <i class="icon-yahoo"></i>
-                        <i class="icon-yahoo"></i>
-                    </a>
-
-                    <a href="#" class="social-icon si-small si-borderless si-linkedin">
-                        <i class="icon-linkedin"></i>
-                        <i class="icon-linkedin"></i>
-                    </a>
-                </div>
-
-                <div class="clear"></div>
-
-            </div>
-
-        </div>
-
-    </div><!-- #copyrights end -->
-
-</footer><!-- #footer end -->*/?>
-
 <footer id="footer" class=""  >
 
     <div class="container">
@@ -78,51 +7,19 @@
         <!-- Footer Widgets
         ============================================= -->
         <div class="footer-widgets-wrap clearfix" style="direction: rtl;">
-
             <div class="col_one_fourth" >
-
                 <div class="widget clearfix">
-
-
                     <div class="clearfix" style="padding: 0; ">
-
-
                             <strong>اینستاگرام:</strong><span dir="ltr"><a href="http://instagram.com/iranunlocks/" target="_top">iranunlocks</a>
 
   </span><br>
                             <strong>ایمیل:</strong><span dir="ltr"> info@Remotekhodro.com </span>
-
                     </div><br>
-<div>ما را در شبکه های اجتماعی دنبال کنید</div>
-                    <!--<a href="https://www.facebook.com/remotekhodro/" class="social-icon si-small si-rounded topmargin-sm si-facebook">
-                        <i class="icon-facebook"></i>
-                        <i class="icon-facebook"></i>
-                    </a>-->
-
-                    <!--<a href="https://telegram.me/remotekhodro" class="social-icon si-small si-rounded topmargin-sm si-twitter">
-                        <i class="icon-email2"></i>
-                        <i class="icon-email2"></i>
-                    </a>-->
-
-                    <!--<a href="www.youtube.com/" class="social-icon si-small si-rounded topmargin-sm si-youtube">
-                        <i class="icon-youtube"></i>
-                        <i class="icon-youtube"></i>
-                    </a>-->
-
+                    <div>ما را در شبکه های اجتماعی دنبال کنید</div>
                     <a href="https://www.instagram.com/iranunlocks/" class="social-icon si-small si-rounded topmargin-sm si-instagram">
                         <i class="icon-instagram"></i>
                         <i class="icon-instagram"></i>
                     </a>
-
-
-
-                   <!-- <a href="http://www.aparat.com/" class="social-icon si-small si-rounded topmargin-sm si-soundcloud">
-                        <i class="icon-play"></i>
-                        <i class="icon-play"></i>
-                    </a>
-
--->
-
 
                 </div>
 
@@ -132,8 +29,6 @@
                     تلفن های تماس:
                     <br>
                     جلال آل احمد شرق به غرب نرسیده به اشرفی اصفهانی خیابان شایق شمالی جنب کوچه هفتم نگین غرب
-                    <br>
-                    <a href="https://goo.gl/maps/bYKuazB1iT62">لوکیشن ایران آنلاک</a>
 
                     </strong>
             </div>
@@ -167,7 +62,9 @@
 
 <!-- External JavaScripts
 ============================================= -->
-<script type="text/javascript" src="<?=TEMPLATE_DIR?>js/jquery.js"></script>
+
+ <script type="text/javascript" src="<?=TEMPLATE_DIR?>js/jquery.js"></script>
+<? /* <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> */?>
 <script type="text/javascript" src="<?=TEMPLATE_DIR?>js/plugins.js"></script>
 
 <!-- Footer Scripts
@@ -178,7 +75,8 @@
 <script type="text/javascript" src="<?=TEMPLATE_DIR?>include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
 <script type="text/javascript" src="<?=TEMPLATE_DIR?>include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 
-<script type="text/javascript" src="<?=TEMPLATE_DIR?>include/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
+
+<? /* <script type="text/javascript" src="<?=TEMPLATE_DIR?>include/rs-plugin/js/extensions/revolution.extension.video.min.js"></script> */?>
 <script type="text/javascript" src="<?=TEMPLATE_DIR?>include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
 <script type="text/javascript" src="<?=TEMPLATE_DIR?>include/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
 <script type="text/javascript" src="<?=TEMPLATE_DIR?>include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>

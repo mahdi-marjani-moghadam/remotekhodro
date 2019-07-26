@@ -21,17 +21,21 @@ ob_start("ob_gzhandler");
     <!-- Stylesheets
     ============================================= -->
     <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/bootstrap.css" type="text/css" />
-    <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/bootstrap-rtl.css" type="text/css" />
-    <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/style.css" type="text/css" />
-    <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/style-rtl.css" type="text/css" />
-    <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/dark.css" type="text/css" />
+    <? /*
+            <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/bootstrap-rtl.css" type="text/css" />
+            <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/style.css" type="text/css" />
+            <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/style-rtl.css" type="text/css" />
+            <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/dark.css" type="text/css" />
     <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/dark-rtl.css" type="text/css" />
+    */ ?>
     <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/font-icons.css" type="text/css" />
+    <? /*
     <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/font-icons-rtl.css" type="text/css" />
     <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/animate.css" type="text/css" />
     <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/magnific-popup.css" type="text/css" />
     <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/responsive.css" type="text/css" />
     <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/responsive-rtl.css" type="text/css" />
+    */ ?>
     <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/custom.css" type="text/css" />
 
 

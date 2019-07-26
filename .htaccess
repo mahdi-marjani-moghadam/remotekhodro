@@ -16,7 +16,7 @@ Header unset ETag
 # cache images/pdf docs for 100 days
 <FilesMatch "\.(ico|pdf|jpg|jpeg|png|gif)$">
 Header set Cache-Control "max-age=8640000, public, must-revalidate"
-Header unset Last-Modified
+#Header unset Last-Modified
 </FilesMatch>
 
 # cache html/htm/xml/txt diles for 2 hours
