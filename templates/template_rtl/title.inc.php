@@ -20,13 +20,16 @@ ob_start("ob_gzhandler");
     <meta name="description" content=" <?=$meta_description?>">
     <!-- Stylesheets
     ============================================= -->
-    <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <? /*
-            <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/bootstrap-rtl.css" type="text/css" />
-            <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/style.css" type="text/css" />
-            <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/style-rtl.css" type="text/css" />
-            <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/dark.css" type="text/css" />
-    <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/dark-rtl.css" type="text/css" />
+        <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/bootstrap.css" type="text/css" />
+
+        <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/bootstrap-rtl.css" type="text/css" />
+        <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/style.css" type="text/css" />
+        <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/style-rtl.css" type="text/css" />
+        <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/dark.css" type="text/css" />
+        <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/dark-rtl.css" type="text/css" />
     */ ?>
     <link rel="stylesheet" href="<?=TEMPLATE_DIR?>css/font-icons.css" type="text/css" />
     <? /*

@@ -838,7 +838,7 @@ class model extends looeic
         $obj=$this;
     }
 
-    static function find($table,$id)
+    static function find2($table,$id)
     {
         $obj= new model($table);
         return $obj->findModel($id);
