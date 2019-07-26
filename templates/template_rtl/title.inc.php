@@ -43,9 +43,11 @@ ob_start("ob_gzhandler");
 
 
     <!-- SLIDER REVOLUTION 5.x CSS SETTINGS -->
+    <? /*
     <link rel="stylesheet" type="text/css" href="<?=TEMPLATE_DIR?>include/rs-plugin/css/settings.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="<?=TEMPLATE_DIR?>include/rs-plugin/css/layers.css">
     <link rel="stylesheet" type="text/css" href="<?=TEMPLATE_DIR?>include/rs-plugin/css/navigation.css">
+ */ ?>
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -55,37 +57,6 @@ ob_start("ob_gzhandler");
     ============================================= -->
     <title><?=$title?></title>
 
-    <style>
-
-        .revo-slider-emphasis-text {
-            font-size: 64px;
-            font-weight: 700;
-            letter-spacing: -1px;
-            font-family: 'Raleway', sans-serif;
-            padding: 15px 20px;
-            border-top: 2px solid #FFF;
-            border-bottom: 2px solid #FFF;
-        }
-
-        .revo-slider-desc-text {
-            font-size: 20px;
-            font-family: 'Lato', sans-serif;
-            width: 650px;
-            text-align: center;
-            line-height: 1.5;
-        }
-
-        .revo-slider-caps-text {
-            font-size: 16px;
-            font-weight: 400;
-            letter-spacing: 3px;
-            font-family: 'Raleway', sans-serif;
-        }
-        .tp-video-play-button { display: none !important; }
-
-        .tp-caption { white-space: nowrap; }
-
-    </style>
 
 </head>
 
@@ -102,7 +73,7 @@ ob_start("ob_gzhandler");
     $temp = explode('/',$_SERVER['QUERY_STRING']);
     $page = $temp[0] ?>
 
-    <? if($admin_info!= -1 && $page == 'services' && is_numeric($temp[2]) ):?>
+    <? if($admin_info!= -1 && is_array($admin_info) && $page == 'services' && is_numeric($temp[2]) ):?>
     <section style="background: #323232; padding: 10px; " class="text-center">
         <a class="btn btn-warning" href="<?=RELA_DIR?>admin/index.php?component=services&action=editServices&id=<?=$temp[2]?>">ویرایش</a>
     </section>

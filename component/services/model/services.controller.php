@@ -17,7 +17,7 @@ class servicesController
     }
     public function template($list = array(), $msg='')
     {
-        // global $conn, $lang;
+         global $admin_info;
 
 
         switch ($this->exportType) {
