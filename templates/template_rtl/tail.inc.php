@@ -6,51 +6,45 @@
 
         <!-- Footer Widgets
         ============================================= -->
-        <div class="footer-widgets-wrap clearfix" style="direction: rtl;">
+        <div class="footer-widgets-wrap clearfix p-2" >
             <div class="col_one_fourth" >
                 <div class="widget clearfix">
                     <div class="clearfix" style="padding: 0; ">
-                            <strong>اینستاگرام:</strong><span dir="ltr"><a href="http://instagram.com/iranunlocks/" target="_top">iranunlocks</a>
-
-  </span><br>
-                            <strong>ایمیل:</strong><span dir="ltr"> info@Remotekhodro.com </span>
+                            <strong>ایمیل:</strong> <span dir="ltr"> info@remotekhodro.com </span>
                     </div><br>
-                    <div>ما را در شبکه های اجتماعی دنبال کنید</div>
-                    <a href="https://www.instagram.com/iranunlocks/" class="social-icon si-small si-rounded topmargin-sm si-instagram">
-                        <i class="icon-instagram"></i>
-                        <i class="icon-instagram"></i>
-                    </a>
 
                 </div>
-
             </div>
-            <div class="col_three_fourth col_last" >
-                <strong>
-                    تلفن های تماس:
-                    <br>
-                    جلال آل احمد شرق به غرب نرسیده به اشرفی اصفهانی خیابان شایق شمالی جنب کوچه هفتم نگین غرب
-
-                    </strong>
+            <div class="col_one_fourth">
+                <div>ما را در شبکه های اجتماعی دنبال کنید</div>
+                <a href="https://www.instagram.com/iranunlocks/" class="social-icon si-small si-rounded topmargin-sm si-instagram">
+                    <i class="icon-instagram"></i>
+                    <i class="icon-instagram"></i>
+                </a>
             </div>
-
-
-
+            <div class="col_two_fourth col_last" >
+                تلفن های تماس:
+                <br>
+                <a href="tel:02144299069">021-44299069</a> , <a href="tel:02144299085">021-44299085</a> , <a href="tel:09124802295">09124802295</a> , <a href="tel:09385881754">09385881754</a>
+                <br>
+                <br>
+                جلال آل احمد شرق به غرب نرسیده به اشرفی اصفهانی خیابان شایق شمالی جنب کوچه هفتم نگین غرب
+            </div>
         </div><!-- .footer-widgets-wrap end -->
-
     </div>
 
     <!-- Copyrights
     ============================================= -->
-    <div id="copyrights">
+    <div id="copyrights" class="p-1">
         <div class="container clearfix">
-            <div class="col_full nobottommargin center rtl">
-                <div class="copyrights-menu copyright-links clearfix">
-                    <a href="<?=RELA_DIR?>">خانه</a>/<a href="<?=RELA_DIR?>contactus">تماس با ما</a>
+
+            <div class="col_full nomargin  center rtl">
+                <div class="copyrights-menu copyright-links clearfix ">
+                    <a href="<?=RELA_DIR?>">خانه</a>/<a href="<?=RELA_DIR?>contactus">تماس با ما</a>/<a href="<?=RELA_DIR?>aboutus">درباره ما</a>
                 </div>
             </div>
-
+            <div class="col_full nomargin  center rtl fontsize10">تمامی حقوق وبسایت متعلق با سایت ساخت ریموت می باشد.</div>
         </div>
-
     </div><!-- #copyrights end -->
 </footer><!-- #footer end -->
 

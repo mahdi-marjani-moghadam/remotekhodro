@@ -1,19 +1,15 @@
-<section id="page-title" class="page-title-right rtl">
+<section id="page-title" class="page-title-right rtl p-1">
     <div class="container clearfix">
         <ol class="breadcrumb">
             <li><a href="<?=RELA_DIR?>">خانه</a></li>
             <li class="active">نمونه کارها</li>
         </ol>
-        <h1>نمونه کار ساخت سوئیچ و ریموت</h1>
     </div>
-
 </section>
-
     <section id="content">
-
-        <div class="content-wrap">
-
+        <div class="content-wrap p-2">
             <div class="container clearfix">
+            <h1 class="text-center">نمونه کار ساخت سوئیچ و ریموت</h1>
 
                 <!-- Post Content
                 ============================================= -->

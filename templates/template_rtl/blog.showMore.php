@@ -1,19 +1,20 @@
-<section id="page-title" class="page-title-right rtl">
+<section id="page-title" class="page-title-right rtl p-1">
     <div class="container clearfix">
         <ol class="breadcrumb">
             <li><a href="<?=RELA_DIR?>">خانه</a></li>
             <li><a href="<?=RELA_DIR?>blog/">نمونه کارها</a></li>
             <li class="active"><?=$export['title']?></li>
         </ol>
-        <h1><?=$export['title']?></h1>
+
     </div>
 
 </section>
 
 
 <section id="" class=" cloud1 clearfix"  >
-    <div class="content-wrap">
+    <div class="content-wrap p-2">
         <div class="container clearfix">
+            <h1 class="text-center"><?=$export['title']?></h1>
             <div class="row" style="direction: rtl;">
 
                 <div class="pricing-box pricing-extended bottommargin clearfix">

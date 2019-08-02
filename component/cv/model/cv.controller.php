@@ -145,7 +145,7 @@ class cvController
      *
      * @version 01.01.01
      */
-    public function showCvForm($_input, $msg)
+    public function showCvForm($_input=array(), $msg='')
     {
         // breadcrumb
         global $breadcrumb;
