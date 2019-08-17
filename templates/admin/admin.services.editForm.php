@@ -37,7 +37,7 @@
         ?>
         <div class="panel-body">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-8 center-block">
+                <div class="col-xs-12 col-sm-12 col-md-12 center-block">
                     <form name="queue" id="queue" role="form" data-validate="form" enctype="multipart/form-data"  class="form-horizontal form-bordered"
                           novalidate="novalidate" method="post">
 
