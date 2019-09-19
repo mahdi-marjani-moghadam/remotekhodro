@@ -59,7 +59,7 @@
                         <th>ردیف</th>
                         <th>عنوان</th>
                         <th>توضیحات مختصر</th>
-                        <th>توضیحات </th>
+
                         <th>اولویت</th>
                         <th>تصویر</th>
                         <th></th>
@@ -76,7 +76,7 @@
                             <td><?php echo $fields['Services_id']; ?></td>
                             <td><?php echo $fields['title']; ?></td>
                             <td><?php echo $fields['brief_description']; ?></td>
-                            <td><?php echo $fields['description']; ?></td>
+
                             <td><?php echo $fields['priority']; ?></td>
                             <td dir="ltr" align="center"><img height="60px" src="<?=RELA_DIR.'statics/services/'. $fields['image'] ?>"/></td>
                             <td>
