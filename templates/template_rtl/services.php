@@ -2,7 +2,7 @@
 
 <div class="row topmargin-sm bottommargin-sm">
     <div class="fancy-title title-dotted-border title-center">
-        <h1>قیمت و نحوه ساخت سوئیچ و ریموت خودرو </h1>
+        <h1>ساخت سوئیچ خودرو </h1>
     </div>
 
     <?php
@@ -35,6 +35,7 @@
     <div class="content-wrap">
         <div class="container clearfix">
             <div class="row">
+                <h2 class="center">دسته بندی ساخت ریموت ماشین </h2>
                 <div class="col-md-12 ">
 
                 <!-- Post Content

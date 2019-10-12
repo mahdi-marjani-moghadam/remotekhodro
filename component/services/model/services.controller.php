@@ -58,7 +58,7 @@ class servicesController
         $export['category']=$obj['category']['export']['list'];
         $export['services']=$obj['services']['export']['list'];
 
-        $title = 'خدمات تعمیر، کددهی، ساخت و کپی سوئیچ، ریموت و کلید یدک | ایران ریموت';
+        $title = 'ساخت سوئیچ خودرو |‌ ساخت ریموت ماشین | ایران ریموت';
         $meta_description = 'خدمات ساخت سوئیچ و ریموت، تعمیر، کددهی،  پروگرام و کپی کلید یدک ۲۴ ساعته در محل انواع خودرو بی ام و ، بنز ، مزدا ، پورشه و ...';
 
         $this->fileName = 'services.php';

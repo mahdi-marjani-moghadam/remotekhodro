@@ -133,7 +133,7 @@ class cvController
 
         $messageStack->add_session('message',$msg, 'success');
 
-        redirectPage(RELA_DIR.'cv', $msg);
+        redirectPage(RELA_DIR.'order', $msg);
         die();
     }
 
@@ -147,12 +147,12 @@ class cvController
      */
     public function showCvForm($_input=array(), $msg='')
     {
-        // breadcrumb
-        global $breadcrumb;
-        $breadcrumb->reset();
-        $breadcrumb->add('تماس با ما');
+        global $messageStack;
+
+
+        $msg = $messageStack->output('message');
         $export['list'] = $_input;
-        $export['breadcrumb'] = $breadcrumb->trail();
+
 
         $this->fileName = 'cv.php';
         $this->template($export, $msg);

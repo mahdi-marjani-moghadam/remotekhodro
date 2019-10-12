@@ -92,7 +92,7 @@ class adminIndexController
         $result = adminEventModel::query('select count(Event_id) as count from event')->getList();
         $export['event_count'] = $result['export']['list'][0]['count'];
 
-        include_once(ROOT_DIR."component/cv/admin/model/admin.cv.model.php");
+        include_once(ROOT_DIR."component/order/admin/model/admin.cv.model.php");
         $result = adminCvModel::query('select count(Cv_id) as count from cv')->getList();
         $export['cv_count'] = $result['export']['list'][0]['count'];
 

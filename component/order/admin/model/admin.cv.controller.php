@@ -221,7 +221,7 @@ class adminCvController
             $this->showCvEditForm($fields, $result['msg']);
         }
         $msg = 'عملیات با موفقیت انجام شد';
-        redirectPage(RELA_DIR . "admin/index.php?component=cv", $msg);
+        redirectPage(RELA_DIR . "admin/index.php?component=order", $msg);
         die();
     }
 
@@ -263,7 +263,7 @@ class adminCvController
             redirectPage(RELA_DIR . "admin/index.php?component=cv", $result['msg']);
         }
         $msg='عملیات با موفقیت انجام شد';
-        redirectPage(RELA_DIR . "admin/index.php?component=cv", $msg);
+        redirectPage(RELA_DIR . "admin/index.php?component=order", $msg);
 
     }
 }

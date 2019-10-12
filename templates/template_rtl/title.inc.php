@@ -108,7 +108,7 @@ ob_start("ob_gzhandler");
 
                         <li <?=( $page == 'blog')?"class='current'":'';?> class="sub-menu"><a href="<?=RELA_DIR?>blog"><div>نمونه کارها<i class="icon-file-alt"></i> </div></a>
                         </li>
-                        <li <?=( $page == 'cv')?"class='current'":'';?>><a href="<?=RELA_DIR?>cv"><div>درخواست خرید<i class="icon-users2"></i></div></a></li>
+                        <li <?=( $page == 'cv')?"class='current'":'';?>><a href="<?=RELA_DIR?>order"><div>درخواست خرید<i class="icon-users2"></i></div></a></li>
 
 
                         <li <?=( $page == 'contactus')?"class='current'":'';?>><a href="<?=RELA_DIR?>contactus"><div>تماس با ما<i class="icon-map-marker2"></i></div></a></li>

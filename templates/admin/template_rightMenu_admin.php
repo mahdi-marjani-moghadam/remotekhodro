@@ -52,47 +52,26 @@
 
 
                 <li>
-                    <a href="#">
+                    <a href="<?=RELA_DIR; ?>admin/?component=blog">
                         <i class="sidebar-icon fa fa-list"></i>
                         <span class="sidebar-text">blog</span>
-                        <b class="fa fa-angle-left"></b>
                     </a>
-                    <ul class="sidebar-child animated fadeInRight">
-                        <li>
-                            <a href="<?=RELA_DIR; ?>admin/?component=blog">
-                                <span class="sidebar-text text-16">show blog</span>
-                            </a>
-                        </li>
-                    </ul>
                 </li>
 
                 <li>
                     <a href="<?=RELA_DIR; ?>admin/?component=services">
                         <i class="sidebar-icon fa fa-money"></i>
                         <span class="sidebar-text">خدمات</span>
-                        <b class="fa fa-angle-left"></b>
+
                     </a>
-                    <ul class="sidebar-child animated fadeInRight">
-                        <li>
-                            <a href="<?=RELA_DIR; ?>admin/?component=services">
-                                <span class="sidebar-text text-16">لیست خدمات</span>
-                            </a>
-                        </li>
-                    </ul>
+
                 </li>
                 <li>
-                    <a href="<?=RELA_DIR; ?>admin/?component=cv">
+                    <a href="<?=RELA_DIR; ?>admin/?component=order">
                         <i class="sidebar-icon fa fa-male"></i>
                         <span class="sidebar-text">درخواست ها</span>
-                        <b class="fa fa-angle-left"></b>
                     </a>
-                    <ul class="sidebar-child animated fadeInRight">
-                        <li>
-                            <a href="<?=RELA_DIR; ?>admin/?component=cv">
-                                <span class="sidebar-text text-16">لیست نفرات</span>
-                            </a>
-                        </li>
-                    </ul>
+
                 </li>
 
 

@@ -54,41 +54,33 @@
                     <thead>
                     <tr>
                         <th>ردیف</th>
-                        <th>عنوان</th>
-                        <th>نام متقاضی</th>
-                        <th>سرویس مورد نظر</th>
-                        <th>توضیح</th>
+                        <th>نام</th>
                         <th>تلفن</th>
                         <th>ایمیل</th>
-                        <th>فایل رزومه</th>
-                        <th>تصویر</th>
+                        <th>خودرو</th>
+                        <th>آدرس</th>
+                        <th>توضیح</th>
+                        <th>تاریخ</th>
                         <th></th>
                     </tr>
                     </thead>
                     <tbody>
                     <?
                     $cn = 1;
-
-
                     foreach ($list['list'] as $id => $fields)
                     {
                     ?>
                         <tr>
                             <td><?php echo $fields['Cv_id']; ?></td>
-                            <td><?php echo $fields['subject']; ?></td>
                             <td><?php echo $fields['name']; ?></td>
-                            <td><?php echo $fields['services']; ?></td>
-                            <td><?php echo $fields['comment']; ?></td>
                             <td><?php echo $fields['phone']; ?></td>
                             <td><?php echo $fields['email']; ?></td>
-                            <td dir="ltr" align="center">
-
-                                <a href="<?=RELA_DIR.'statics/cv/'. $fields['cvfile'] ?>"><?=$fields['cvfile']?></a>
-                            </td>
-                            <td dir="ltr" align="center"><img height="60px" src="<?=RELA_DIR.'statics/cv/'. $fields['image'] ?>"/></td>
+                            <td><?php echo $fields['services']; ?></td>
+                            <td><?php echo $fields['address']; ?></td>
+                            <td><?php echo $fields['comment']; ?></td>
+                            <td><?php echo ($fields['date'] != '')?convertDate($fields['date']):''; ?></td>
                             <td>
-
-                                <a href="<?= RELA_DIR ?>admin/?component=cv&action=deleteCv&id=<?php echo $fields['Cv_id']; ?>">حذف</a>
+                                <a href="<?= RELA_DIR ?>admin/?component=order&action=deleteCv&id=<?php echo $fields['Cv_id']; ?>">حذف</a>
                             </td>
                         </tr>
                     <?
@@ -106,7 +98,6 @@
                         <th><input type="hidden" name="search_7" class="search_init form-control"/></th>
                         <th><input type="hidden" name="search_8" class="search_init form-control"/></th>
                         <th><input type="hidden" name="search_9" class="search_init form-control"/></th>
-                        <th><input type="hidden" name="search_10" class="search_init form-control"/></th>
 
                     </tfoot>
                 </table>
