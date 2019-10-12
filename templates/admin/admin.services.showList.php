@@ -80,8 +80,10 @@
                             <td><?php echo $fields['priority']; ?></td>
                             <td dir="ltr" align="center"><img height="60px" src="<?=RELA_DIR.'statics/services/'. $fields['image'] ?>"/></td>
                             <td>
+                                <a href="<?=RELA_DIR?>services/<?=$fields['category_id']?>/<?=$fields['Services_id']?>/<?=$fields['url']?>">نمایش</a><br>
                                 <a href="<?= RELA_DIR ?>admin/?component=services&action=editServices&id=<?php echo $fields['Services_id']; ?>">ویرایش</a>
                                 <a href="<?= RELA_DIR ?>admin/?component=services&action=deleteServices&id=<?php echo $fields['Services_id']; ?>">حذف</a>
+
                             </td>
                         </tr>
                     <?

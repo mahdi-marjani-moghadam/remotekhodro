@@ -81,6 +81,15 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6">
+                                <div class="form-group">
+                                    <label class="col-xs-12 col-sm-4 col-md-2 pull-right control-label rtl"
+                                           for="url">url :</label>
+                                    <div class="col-xs-12 col-sm-8 col-md-10 pull-right">
+                                        <input type="text" class="form-control" name="url" id="url"  value="<?= $list['url'] ?>">
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
 
