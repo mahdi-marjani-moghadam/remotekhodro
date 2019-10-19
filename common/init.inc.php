@@ -94,6 +94,12 @@ global $admin_info,$member_info;
 //$admin_info = $admin->checkLogin();
 //$member_info = $admin->checkLogin();
 
+include(ROOT_DIR . "component/login/admin/model/admin.login.model.php");
+
+$admin = new adminLoginModel();
+
+$admin_info = $admin->checkLogin();
+
 function __autoload($name)
 {
     $modelFileName = ROOT_DIR . 'model/' . $name . '.class.php';

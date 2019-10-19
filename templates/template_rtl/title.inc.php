@@ -70,10 +70,13 @@ ob_start("ob_gzhandler");
     <!-- Header
     ============================================= -->
     <?
+    //global $admin_info;
     $temp = explode('/',$_SERVER['QUERY_STRING']);
-    $page = $temp[0] ?>
+    $page = $temp[0];
 
-    <? if($admin_info!= -1 && is_array($admin_info) && $page == 'services' && is_numeric($temp[2]) ):?>
+    ?>
+
+    <? if($admin_info['result']!= -1 && is_array($admin_info) && $page == 'services' && is_numeric($temp[2]) ):?>
     <section style="background: #323232; padding: 10px; " class="text-center">
         <a class="btn btn-warning" href="<?=RELA_DIR?>admin/index.php?component=services&action=editServices&id=<?=$temp[2]?>">ویرایش</a>
     </section>

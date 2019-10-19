@@ -19,6 +19,7 @@ class servicesController
     {
          global $admin_info;
 
+         //print_r($admin_info);die();
 
         switch ($this->exportType) {
             case 'html':
@@ -118,15 +119,23 @@ class servicesController
     public function showMore($_input,$catId)
     {
 
+        global $PARAM;
+
 
 
         $services = services::find($_input);
+
+        if($PARAM[3] != $services->url){
+            header("Location:".RELA_DIR.'services/'.$services->category_id.'/'.$services->Services_id.'/'.$services->url);
+        }
+
 
         $export = $services->fields;
 
         $temp = explode(',',$catId);
 
         $cat = category::find($temp[1]);
+
 
 
         $export['cat_id'] = $cat->Category_id;
