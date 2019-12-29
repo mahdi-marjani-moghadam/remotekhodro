@@ -79,9 +79,7 @@ class adminIndexController
      */
     public function showList($fields)
     {
-        include_once(ROOT_DIR."component/sales/admin/model/admin.sales.model.php");
-        $result = adminSalesModel::query('select count(Sales_id) as count from sales')->getList();
-        $export['sales_count'] = $result['export']['list'][0]['count'];
+
 
 
         include_once(ROOT_DIR."component/blog/admin/model/admin.blog.model.php");

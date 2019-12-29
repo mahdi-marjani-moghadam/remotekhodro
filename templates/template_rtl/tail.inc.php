@@ -1,45 +1,33 @@
-<!-- Footer
-============================================= -->
 <footer id="footer" class=""  >
-
     <div class="container">
-
-        <!-- Footer Widgets
-        ============================================= -->
         <div class="footer-widgets-wrap clearfix p-2" >
-            <div class="col_one_fourth" >
+            <div class="col-md-3" >
                 <div class="widget clearfix">
                     <div class="clearfix" style="padding: 0; ">
                             <strong>ایمیل:</strong> <span dir="ltr"> info@remotekhodro.com </span>
                     </div><br>
-
                 </div>
             </div>
-            <div class="col_one_fourth">
+            <div class="col-md-3">
                 <div>ما را در شبکه های اجتماعی دنبال کنید</div>
-                <a href="https://www.instagram.com/iranunlocks/" class="social-icon si-small si-rounded topmargin-sm si-instagram">
-                    <i class="icon-instagram"></i>
-                    <i class="icon-instagram"></i>
+                <br>
+                <a href="https://www.instagram.com/iranunlocks/" class=" topmargin-sm">
+                    Instagram
                 </a>
             </div>
-            <div class="col_two_fourth col_last" >
+            <div class="col-md-6" >
                 تلفن های تماس:
                 <br>
                 <a href="tel:02144299069">021-44299069</a> , <a href="tel:02144299085">021-44299085</a> , <a href="tel:09124802295">09124802295</a> , <a href="tel:09385881754">09385881754</a>
                 <br>
-                 <a href="tel:02126154238">021-26154238</a> , <a href="tel:02122297397">021-22297397</a> 
-
+                 <a href="tel:02126154238">021-26154238</a> , <a href="tel:02122297397">021-22297397</a>
                 <br>
                 شعبه اصلی: تهران، آجودانیه(شهید سباری)، بلوار محمدی، خیابان البرز، مجتمع خودرویی البرز
                 <br>
                 شعبه ۲: جلال آل احمد شرق به غرب نرسیده به اشرفی اصفهانی خیابان شایق شمالی جنب کوچه هفتم نگین غرب
-
             </div>
-        </div><!-- .footer-widgets-wrap end -->
+        </div>
     </div>
-
-    <!-- Copyrights
-    ============================================= -->
     <div id="copyrights" class="p-1">
         <div class="container clearfix">
 
@@ -50,33 +38,18 @@
             </div>
             <div class="col_full nomargin  center rtl fontsize10">تمامی حقوق وبسایت متعلق با سایت ساخت ریموت می باشد.</div>
         </div>
-    </div><!-- #copyrights end -->
-</footer><!-- #footer end -->
-
-</div><!-- #wrapper end -->
-
-<!-- Go To Top
-============================================= -->
+    </div>
+</footer>
+</div>
 <div id="gotoTop" class="icon-angle-up"></div>
-
-<!-- External JavaScripts
-============================================= -->
-
  <script type="text/javascript" src="<?=TEMPLATE_DIR?>js/jquery.js"></script>
 <? /* <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> */?>
-<script type="text/javascript" src="<?=TEMPLATE_DIR?>js/plugins.js"></script>
-
-<!-- Footer Scripts
-============================================= -->
-<script type="text/javascript" src="<?=TEMPLATE_DIR?>js/functions.js"></script>
-
-<!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
+<? /* <script type="text/javascript" src="<?=TEMPLATE_DIR?>js/plugins.js"></script>*/?>
+<? /*<script type="text/javascript" src="<?=TEMPLATE_DIR?>js/functions.js"></script> */ ?>
 <? /*
 <script type="text/javascript" src="<?=TEMPLATE_DIR?>include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
 <script type="text/javascript" src="<?=TEMPLATE_DIR?>include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
  */?>
-
-
 <? /*
  <script type="text/javascript" src="<?=TEMPLATE_DIR?>include/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
 
@@ -88,127 +61,16 @@
 <script type="text/javascript" src="<?=TEMPLATE_DIR?>include/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
 <script type="text/javascript" src="<?=TEMPLATE_DIR?>include/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
  */?>
-
-
 <script type="text/javascript">
-
     var tpj=jQuery;
     tpj.noConflict();
-
     tpj(document).ready(function() {
-
-        var apiRevoSlider = tpj('.tp-banner').show().revolution(
-            {
-                sliderType:"standard",
-                jsFileLocation:"<?=TEMPLATE_DIR?>include/rs-plugin/js/",
-                dottedOverlay:"none",
-                delay:16000,
-                startwidth:1140,
-                startheight:600,
-                hideThumbs:200,
-
-                thumbWidth:100,
-                thumbHeight:50,
-                thumbAmount:5,
-
-                navigation: {
-                    keyboardNavigation: "on",
-                    keyboard_direction: "horizontal",
-                    mouseScrollNavigation: "off",
-                    onHoverStop: "off",
-                    touch: {
-                        touchenabled: "on",
-                        swipe_threshold: 75,
-                        swipe_min_touches: 1,
-                        swipe_direction: "horizontal",
-                        drag_block_vertical: false
-                    },
-                    thumbnails: {
-                        style: "hesperiden",
-                        enable: true,
-                        width: 100,
-                        height: 50,
-                        min_width: 100,
-                        wrapper_padding: 5,
-                        wrapper_color: "#ffffff",
-                        wrapper_opacity: "0.5",
-                        tmp: '<span class="tp-thumb-image"></span><span class="tp-thumb-title">{{title}}</span>',
-                        visibleAmount: 5,
-                        hide_onmobile: false,
-                        hide_onleave: false,
-                        direction: "horizontal",
-                        span: false,
-                        position: "inner",
-                        space: 5,
-                        h_align: "right",
-                        v_align: "bottom",
-                        h_offset: 20,
-                        v_offset: 50
-                    }
-                },
-
-                touchenabled:"on",
-                onHoverStop:"on",
-
-                swipe_velocity: 0.7,
-                swipe_min_touches: 1,
-                swipe_max_touches: 1,
-                drag_block_vertical: false,
-
-                parallax:"mouse",
-                parallaxBgFreeze:"on",
-                parallaxLevels:[7,4,3,2,5,4,3,2,1,0],
-
-                keyboardNavigation:"off",
-
-                navigationHAlign:"center",
-                navigationVAlign:"bottom",
-                navigationHOffset:0,
-                navigationVOffset:20,
-
-                soloArrowLeftHalign:"left",
-                soloArrowLeftValign:"center",
-                soloArrowLeftHOffset:20,
-                soloArrowLeftVOffset:0,
-
-                soloArrowRightHalign:"right",
-                soloArrowRightValign:"center",
-                soloArrowRightHOffset:20,
-                soloArrowRightVOffset:0,
-
-                shadow:0,
-                fullWidth:"off",
-                fullScreen:"on",
-
-                spinner:"spinner4",
-
-                stopLoop:"off",
-                stopAfterLoops:-1,
-                stopAtSlide:-1,
-
-                shuffle:"off",
-
-                autoHeight:"off",
-                forceFullWidth:"off",
-
-
-
-                hideThumbsOnMobile:"off",
-                hideNavDelayOnMobile:1500,
-                hideBulletsOnMobile:"off",
-                hideArrowsOnMobile:"off",
-                hideThumbsUnderResolution:0,
-
-                hideSliderAtLimit:0,
-                hideCaptionAtLimit:0,
-                hideAllCaptionAtLilmit:0,
-                startWithSlide:0,
-            });
-
+        tpj('#primary-menu-trigger').click(function () {
+            tpj('ul.norightborder.norightpadding.norightmargin').toggleClass('show');
+        })
     });
-
-</script><!-- END REVOLUTION SLIDER -->
-<script type="text/javascript">
+</script>
+<? /*<script type="text/javascript">
     jQuery(document).ready(function($){
         var $faqItems = $('#faqs .faq');
         if( window.location.hash != '' ) {
@@ -227,20 +89,8 @@
             }
         }
 
-        $('#portfolio-filter a').click(function(){
-            $('#portfolio-filter li').removeClass('activeFilter');
-            $(this).parent('li').addClass('activeFilter');
-            var faqSelector = $(this).attr('data-filter');
-            $faqItems.css('display', 'none');
-            if( faqSelector != 'all' ) {
-                $( faqSelector ).fadeIn(500);
-            } else {
-                $faqItems.fadeIn(500);
-            }
-            return false;
-        });
     });
-</script>
+</script> */?>
 
 </body>
 </html>
