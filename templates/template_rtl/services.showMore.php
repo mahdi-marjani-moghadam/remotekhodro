@@ -15,7 +15,7 @@
 </section>
 <section id="content" class="rtl" style="margin-bottom: 0px;">
     <div class="container clearfix ">
-        <h1 class="text-center p-2 m-0 " ><?=$export['title']?></h1>
+        <h1 class="text-center p-2 m-0 " ><a href="<?=RELA_DIR?>services/,<?=$export['cat_id']?>,/<?=$export['Services_id']?>/<?=$export['url']?>"><?=$export['title']?></a></h1>
         <div class="col-md-4 text-center top-fit">
             <img src="<?=RELA_DIR?>statics/services/<?=$export['image']?>" alt="<?=$export['title']?>" class="fit">
         </div>
