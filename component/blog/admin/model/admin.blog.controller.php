@@ -304,6 +304,7 @@ class adminBlogController
     {
         global $messageStack;
 
+
         if(!validator::required($fields['Blog_id']) and !validator::Numeric($fields['Blog_id']))
         {
             $msg= 'یافت نشد';

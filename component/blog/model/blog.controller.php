@@ -64,16 +64,25 @@ class blogController
     }
     public function showMore($_input)
     {
+
         if (!is_numeric($_input)) {
             $msg = 'یافت نشد';
             $this->fileName = 'blog.showList.php';
             $this->template('', $msg);
             die();
         }
+
+
         //$blog = new blogModel();
         //$result = $blog->getTrailerById($_input);
 
         $result = blogModel::find($_input);
+
+        global $PARAM;
+        
+        if($PARAM[2] != $result->title){
+            header("Location:".RELA_DIR.'blog/'.$result->Blog_id.'/'.$result->title);
+        }
 
 
         if (!is_object($result)) {

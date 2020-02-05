@@ -580,7 +580,8 @@ class looeic
     }
     public function save ()
     {
-        if($this->fields[$this->PRI_KEY]=='')
+
+        if($this->fields[$this->PRI_KEY] == '')
         {
             $this->insert();
         }else
@@ -705,7 +706,7 @@ class looeic
         $conn = dbConn::getConnection();
         $sql = " UPDATE ".$this->TABLE_NAME." SET ".$sql_key_val." 
          WHERE ".$this->PRI_KEY." = '" . $this->fields[$this->PRI_KEY] . "' ";
-
+        //print_r_debug($sql);
         $stmt = $conn->prepare($sql);
         $stmt->execute();
         $stmt->setFetchMode(PDO::FETCH_ASSOC);

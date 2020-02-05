@@ -19,10 +19,7 @@
 body{
     font-family: Roya, Helvetica, Arial, sans-serif;
     overflow-x: hidden;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+
 }
 /*
 ::selection{ background-color: #888; color: #ecf0f1; }

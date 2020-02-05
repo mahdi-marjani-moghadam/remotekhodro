@@ -37,7 +37,7 @@
         ?>
         <div class="panel-body">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-8 center-block">
+                <div class="col-xs-12 col-sm-12 col-md-12 center-block">
                     <form name="queue" id="queue" role="form" data-validate="form" enctype="multipart/form-data"  class="form-horizontal form-bordered"
                           novalidate="novalidate" method="post">
 
@@ -56,7 +56,7 @@
 
                         <div class="row xsmallSpace hidden-xs"></div>
                         <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="col-xs-12 col-sm-12 col-md-8 no-padding">
                                 <div class="form-group">
 
                                     <div class="col-xs-12 col-sm-12 col-md-12 pull-right">
@@ -72,6 +72,7 @@
 
 
                                         $config['language'] = 'fa';
+                                        $config['height'] = '1500px';
                                         $config['filebrowserBrowseUrl'] = RELA_DIR.'common/ckfinder/ckfinder.html';
                                         $config['filebrowserImageBrowseUrl'] = RELA_DIR.'common/ckfinder/ckfinder.html?type=Images';
                                         $config['filebrowserUploadUrl'] = RELA_DIR.'common/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files';
@@ -84,7 +85,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="col-xs-12 col-sm-4 col-md-4 no-padding">
                                 <div class="form-group">
 
                                     <div class="col-xs-12 col-sm-12 col-md-12 pull-right">
@@ -123,11 +124,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xs-12 col-sm-12 col-md-6">
+                                <div class="col-xs-12 col-sm-12 col-md-12">
                                     <div class="form-group">
-                                        <label class="col-xs-12 col-sm-4 col-md-4 pull-right control-label rtl"
+                                        <label class="col-xs-12 col-sm-2 col-md-2 pull-right control-label rtl"
                                                for="meta_description">Meta description:</label>
-                                        <div class="col-xs-12 col-sm-8 col-md-8 pull-right">
+                                        <div class="col-xs-12 col-sm-10 col-md-10 pull-right">
                                             <input type="text" class="form-control" name="meta_description" id="meta_description" value="<?= $list['meta_description'] ?>">
                                         </div>
                                     </div>

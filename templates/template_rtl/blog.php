@@ -52,7 +52,7 @@
                     ============================================= -->
                     <ul class="pager nomargin">
 
-                            <? foreach ($list['pagination'] as $k => $v): ?>
+                            <? foreach ($export['pagination'] as $k => $v): ?>
                                 <li ><a href="<?=RELA_DIR?><?=$v['address']?>"><?=$v['label']?></a></li>
                             <? endforeach;?>
 
