@@ -1,3 +1,8 @@
+<div class="call-button">
+    
+
+    <a href="tel:09124802295" class="btn btn-success">تماس <i class="fas fa-phone"></i></a>
+</div>
 <footer id="footer" class=""  >
     <div class="container">
         <div class="footer-widgets-wrap clearfix p-2" >
@@ -91,6 +96,15 @@
 
     });
 </script> */?>
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137723846-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-137723846-5');
+    </script>
 
 </body>
 </html>

@@ -4,13 +4,7 @@ ob_start("ob_gzhandler");
 <!DOCTYPE html>
 <html dir="rtl" lang="fa-IR">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137723846-5"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-137723846-5');
-    </script>
+    
     <meta name="description" content=" <?=$meta_description?>">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <? /*

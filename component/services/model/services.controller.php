@@ -1,4 +1,4 @@
-<?php
+ <?php
 /**
  * Created by PhpStorm.
  * User: mahdi
@@ -131,7 +131,7 @@ class servicesController
 
 
         $export = $services->fields;
-
+        
         $temp = explode(',',$catId);
 
         $cat = category::find($temp[1]);
@@ -144,7 +144,8 @@ class servicesController
         $export['cat_meta_description'] = $cat->meta_keyword;
         $export['cat_alt'] = $cat->alt_fa;
         $export['cat_url'] = $cat->url;
-
+        
+        // print_r_debug(explode(' ',$export['date'])[0]);
 
         $title = $export['meta_title'];
         $meta_description = $export['meta_description'];
