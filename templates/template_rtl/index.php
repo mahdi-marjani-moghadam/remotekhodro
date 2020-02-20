@@ -28,10 +28,14 @@
 
                 <div class="col-md-12 col-sm-12 col-xs-12 rtl text-center" >
                     <div class="fancy-title title-dotted-border title-center">
-                        <h2 >درباره مرکز ایران ریموت</h2>
+                        <h2>نمایندگی ساخت سوئیچ ایران ریموت</h2>
                     </div>
-                    موسسه ایران ریموت متخصص در زمینه ساخت و پروگرام ریموت و سوئیچ با سابقه ای بالا توانسته خدمات تعمیر، تعویض، کددهی، کپی کلید یدک انواع خودرو را در کمترین زمان برای تمامی شهر های ایران ارائه دهد.
-
+                    نمایندگی ایران ریموت یکی از نمایندگی های فعال نگین غرب می باشد که در زمینه 
+                    <a href="<?=RELA_DIR?>services/خدمات-ساخت-سوئیچ-ساخت-ریموت">ساخت سوئیچ</a>
+                     ، پروگرام ریموت و تعمیر سوئیچ با سابقه ای بالا توانسته 
+                     خدمات تعمیر، تعویض، کددهی، کپی کلید یدک انواع خودرو را در کمترین زمان برای تمامی شهر های ایران ارائه دهد.
+                
+                
                     <div class="clearfix"><br></div>
 
                 </div>
@@ -67,7 +71,21 @@
                         <p>ارائه خدمات VIP</p>
                     </div>
                 </div>
-
+                    
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="fancy-title title-dotted-border title-center">
+                        <h2>خدمات ساخت و کددهی ریموت و سوئیچ</h2>
+                    </div>
+                    
+                    - <a href="<?=RELA_DIR?>services/,221,/3/%D8%B3%D8%A7%D8%AE%D8%AA-%D8%B3%D9%88%D8%A6%DB%8C%DA%86-%D8%A8%D9%86%D8%B2-%D8%B3%D8%A7%D8%AE%D8%AA-%D8%B1%DB%8C%D9%85%D9%88%D8%AA-%D8%A8%D9%86%D8%B2"><b>ساخت سوئیچ و ریموت بنز</b></a> <br>
+                    - <a href="<?=RELA_DIR?>services/,222,/1/%D8%B3%D8%A7%D8%AE%D8%AA-%D8%B3%D9%88%D8%A6%DB%8C%DA%86-%D8%A8%DB%8C-%D8%A7%D9%85-%D9%88-%D8%B3%D8%A7%D8%AE%D8%AA-%D8%B1%DB%8C%D9%85%D9%88%D8%AA-%D8%A8%DB%8C-%D8%A7%D9%85-%D9%88-bmw">ساخت ریموت و سوئیچ بی ام و</a>
+                    <p>
+                        در نمایندگی ایران ریموت، متخصصان ما در زمینه ساخت ریموت و سوئیچ انواع خودرو خارجی در هر مدل و سالی خدمات در محل را ارائه می دهد. 
+                    </p>
+                
+                </div>
             </div>
             <div class="container clearfix">
                 <div class="fancy-title title-dotted-border title-center" >
