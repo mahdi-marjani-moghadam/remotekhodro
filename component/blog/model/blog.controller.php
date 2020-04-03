@@ -41,6 +41,11 @@ class blogController
         }
     }
 
+    /**
+     * @param PAGE_SIZE
+     * @property PAGE_SIZE
+     */
+    
     function showALL()
     {
         global $page;
@@ -51,7 +56,17 @@ class blogController
         $fields['order']['Blog_id'] = 'DESC';
 
         $blog = $blog->getByFilter($fields);
+
+
         $export['blog'] = $blog['export']['list'];
+
+        include_once ROOT_DIR.'component/category/model/category.model.php';
+        foreach($export['blog'] as $k => $item){
+            $cat = category::find(trim($item['category_id'],','));
+
+            $export['blog'][$k]['cat_name'] = $cat->title_fa;
+            
+        }
 
         $a = paginationButtom($blog['export']['recordsCount']);
         $export['pagination'] = $a['export']['list'];
@@ -77,11 +92,13 @@ class blogController
         //$result = $blog->getTrailerById($_input);
 
         $result = blogModel::find($_input);
+        
+
 
         global $PARAM;
         
-        if($PARAM[2] != $result->title){
-            header("Location:".RELA_DIR.'blog/'.$result->Blog_id.'/'.$result->title);
+        if($PARAM[2] != $result->url){
+            header("Location:".RELA_DIR.'blog/'.$result->Blog_id.'/'.$result->url);
         }
 
 
@@ -101,6 +118,16 @@ class blogController
         $title = $result->fields['meta_title'];
         $meta_description = $result->fields['meta_description'];
         $export = $result->fields;
+
+
+        include_once ROOT_DIR.'component/category/model/category.model.php';
+        $cat = category::find(trim($result->category_id,','));
+        
+        
+        $export['cat_name'] = $cat->title_fa;
+
+        //print_r_debug($export);
+
 
         $this->fileName = 'blog.showMore.php';
         $this->template(compact('export','title','meta_description'));

@@ -616,3 +616,7 @@ class categoryModel
     }
 
 }
+
+class category extends looeic{
+    
+}

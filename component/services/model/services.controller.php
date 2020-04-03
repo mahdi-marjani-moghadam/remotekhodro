@@ -151,6 +151,13 @@ class servicesController
         $meta_description = $export['meta_description'];
 
 
+        include ROOT_DIR.'component/blog/model/blog.model.php';
+        $obj = new blogModel();
+        
+        $blog = $obj::getBy_Category_id($export['category_id'])->getList();
+
+        $export['blog'] = ($blog['export']['recordsCount']>0) ? $blog['export']['list'] : array();
+
         $this->fileName = 'services.showMore.php';
 
         $this->template(compact('export','title','meta_description'));

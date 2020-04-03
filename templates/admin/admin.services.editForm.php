@@ -5,17 +5,11 @@
 //die();
 ?>
 
-<div class="content-control">
-    <!--control-nav-->
-    <ul class="control-nav pull-right">
-        <li><a class="rtl text-24"><i class="sidebar-icon fa fa-adn"></i> افزودن سرویس جدید</a></li>
-    </ul><!--/control-nav-->
-</div><!-- /content-control -->
 
 <div class="content-body">
     <div id="panel-tablesorter" class="panel panel-warning">
         <div class="panel-heading bg-white">
-            <h3 class="panel-title rtl">مقاله جدید</h3>
+            <h3 class="panel-title rtl">ویرایش خدمات</h3>
             <div class="panel-actions">
                 <button data-expand="#panel-tablesorter" title="" class="btn-panel rtl" data-original-title="تمام صفحه">
                     <i class="fa fa-expand"></i>
