@@ -23,19 +23,18 @@
 		<h1 class="text-center p-2 m-0 "><a href="<?= RELA_DIR ?>services/,<?= $export['cat_id'] ?>,/<?= $export['Services_id'] ?>/<?= $export['url'] ?>"><?= $export['title'] ?></a></h1>
 
 
-
-		<div class="col-md-4 col-sm-4 text-center top-fit p-half">
-			<img src="<?= RELA_DIR ?>statics/services/<?= $export['image'] ?>" alt="<?= $export['title'] ?>" class="fit">
+		<div class="col-md-4 col-sm-4 text-center p-half" style="height: 300px;">
+			<img style="object-fit: cover; height: 100%" src="<?= RELA_DIR ?>statics/services/<?= $export['image'] ?>" alt="<?= $export['title'] ?>" class="">
 		</div>
-		<div class="col-md-4 col-sm-4 text-center top-fit p-half">
-			<img src="<?= RELA_DIR ?>statics/services/<?= $export['image2'] ?>" alt="<?= $export['alt2'] ?>" class="fit">
+		<div class="col-md-4 col-sm-4 text-center p-half" style="height: 300px;">
+			<img style="object-fit: cover; height: 100%" src="<?= RELA_DIR ?>statics/services/<?= $export['image2'] ?>" alt="<?= $export['alt2'] ?>" class="">
 		</div>
-		<div class="col-md-4 col-sm-4 text-center top-fit p-half">
-			<img src="<?= RELA_DIR ?>statics/services/<?= $export['image3'] ?>" alt="<?= $export['alt3'] ?>" class="fit">
+		<div class="col-md-4 col-sm-4 text-center  p-half" style="height: 300px;">
+			<img style="object-fit: cover; height: 100%" src="<?= RELA_DIR ?>statics/services/<?= $export['image3'] ?>" alt="<?= $export['alt3'] ?>" class="">
 		</div>
 		<div class="clear"></div>
 		<br>
-		<div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 ">
+		<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 ">
 
 			<p><?= $export['description'] ?></p>
 
@@ -76,6 +75,9 @@
 							"@type": "Brand",
 							"name": "<?= $v['cat_name'] ?>"
 						},
+						"sku": 10000,
+						"offers": 10000,
+						"review": "",
 						"aggregateRating": {
 							"@type": "AggregateRating",
 							"ratingValue": "5",
