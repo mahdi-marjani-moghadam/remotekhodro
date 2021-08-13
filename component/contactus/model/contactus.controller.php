@@ -85,6 +85,9 @@ class contactusController
     public function addContactus($_input)
     {
         global $messageStack;
+        
+                die('بخش درخواست تا اطلاع ثانویه تعطیل می باشد.');
+
 
         $contactus = new contactusModel();
         $result = $contactus->setFields($_input);

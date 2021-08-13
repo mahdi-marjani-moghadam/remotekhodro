@@ -2,7 +2,7 @@
 error_reporting(1);
 error_reporting(E_ALL ^ E_STRICT ^ E_NOTICE ^ E_DEPRECATED ^ E_WARNING);
 ini_set('display_errors', 1);
-//print_r_debug($_SESSION);
+
 $db = dbConn::getConnection();
 
 $db->exec('SET character_set_database=UTF8');
@@ -58,8 +58,7 @@ include_once(ROOT_DIR . "common/validators.php");
 
 global $messageStack,$dataStack;
 $messageStack = new messageStack();
-//$messageStack->loadFromSession();
-
+$messageStack->loadFromSession();
 $dataStack = new dataStack();
 
 include(ROOT_DIR . "common/breadcrumb.php");

@@ -45,7 +45,7 @@
 		<div class="col-md-12 col-sm-12 col-xs-12">
 			<h2>نمونه کارها</h2>
 			<div class="row">
-				<?php foreach ($export['blog'] as $v) : ?>
+				<? foreach ($export['blog'] as $v) : ?>
 					<div class="col-md-3 col-sm-6 col-xs-12 products-list-item">
 						<img class="img-responsive products-list-image" src="<?= RELA_DIR ?>statics/blog/<?= $v['image'] ?>" alt="<?= $v['title'] ?>">
 						<a href="<?= RELA_DIR ?>blog/<?= $v['Blog_id'] ?>/<?= $v['url'] ?>"><?= $v['title'] ?> </a>
@@ -112,7 +112,6 @@
 			//},
 
 			//"dateModified": "2019-07-14T14:57:19+04:30",
-
-		}]
+		}]		
 	}
 </script>

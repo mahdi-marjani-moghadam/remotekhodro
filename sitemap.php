@@ -33,7 +33,7 @@ echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="htt
  foreach($export as $k => $v):
 
     echo '<url>' . PHP_EOL;
-    echo '<loc>'.$base_url.$v['Blog_id'].'/'.$v['title'] .'/</loc>' . PHP_EOL;
+    echo '<loc>'.$base_url.$v['Blog_id'].'/'.$v['url'] .'/</loc>' . PHP_EOL;
     echo '<changefreq>daily</changefreq>' . PHP_EOL;
     echo '</url>' . PHP_EOL;
 

@@ -50,6 +50,27 @@
             "@type": "AggregateRating",
             "ratingValue": "5",
             "reviewCount": "10"
+        },
+        "sku": "0446310786",
+        "mpn": "925872",
+        "offers": {
+            "@type": "AggregateOffer",
+            "offerCount": "1",
+            "lowPrice": "119.99",
+            "highPrice": "199.99",
+            "priceCurrency": "IRR"
+        },
+        "review": {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Fred Benson"
+            }
         }
     }
 </script>

@@ -7,7 +7,7 @@
  */
 class services extends looeic
 {
-
+    protected  $TABLE_NAME = 'services';
 }
 class category extends looeic{
 

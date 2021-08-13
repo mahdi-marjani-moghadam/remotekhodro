@@ -89,6 +89,7 @@ class cvController
     public function addCv($_input)
     {
         global $messageStack;
+        die('بخش درخواست تا اطلاع ثانویه تعطیل می باشد.');
 
         $cv = new cvModel();
 

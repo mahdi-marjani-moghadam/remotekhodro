@@ -3,3 +3,4 @@ server.inc.php
 
 statics/banner/*.*
 statics/blog/*.*
+.vscode/sftp.json

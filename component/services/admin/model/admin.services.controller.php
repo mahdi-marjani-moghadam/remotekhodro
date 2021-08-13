@@ -269,7 +269,7 @@ class adminServicesController
         {
             $this->showServicesEditForm($fields,$result['msg']);
         }
-
+        $services->date = date('Y-m-d H:i:s');
         $services->save();
 
         if(file_exists($_FILES['image']['tmp_name'])){

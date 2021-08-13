@@ -22,6 +22,7 @@ class blogController
         // global $conn, $lang;
         switch ($this->exportType) {
             case 'html':
+                
                 extract($list, EXTR_SKIP);
                 include ROOT_DIR.'templates/'.CURRENT_SKIN.'/title.inc.php';
                 include ROOT_DIR.'templates/'.CURRENT_SKIN."/$this->fileName";
@@ -60,21 +61,21 @@ class blogController
 
         $export['blog'] = $blog['export']['list'];
 
-        include_once ROOT_DIR.'component/category/model/category.model.php';
+        include_once ROOT_DIR.'component/services/model/services.model.php';
         foreach($export['blog'] as $k => $item){
             $cat = category::find(trim($item['category_id'],','));
 
             $export['blog'][$k]['cat_name'] = $cat->title_fa;
             
         }
-
         $a = paginationButtom($blog['export']['recordsCount']);
         $export['pagination'] = $a['export']['list'];
-
+        
         $title = 'نمونه کار ساخت سوئیچ و ریموت بی ام و ، بنز، هیوندا ،‌ مزدا ، کیا ، رنو ، پورشه' .' | '.'ایران ریموت';
         $meta_description = 'نمونه کارهای ساخت سوئیچ و ریموت خودرو های بی ام و ، بنز، هیوندا ،‌ مزدا ، کیا ، رنو ، پورشه در تهران ۲۴ ساعته';
-
+        
         $this->fileName = 'blog.php';
+        
         $this->template(compact('export','title','meta_description'));
     }
     public function showMore($_input)

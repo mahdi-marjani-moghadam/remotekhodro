@@ -79,7 +79,7 @@ class adminIndexController
      */
     public function showList($fields)
     {
-
+        
 
 
         include_once(ROOT_DIR."component/blog/admin/model/admin.blog.model.php");

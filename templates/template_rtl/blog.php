@@ -22,7 +22,7 @@
                     <? foreach ($export['blog'] as $k => $v) : ?>
 
 
-                        <div class="col-md-6 col-sm-12 col-xs-12 blog-item" >
+                        <div class="col-md-6 col-sm-12 col-xs-12 blog-item">
 
                             <div class="entry-image">
                                 <a href="<?= RELA_DIR ?>statics/blog/<?= $v['image'] ?>" data-lightbox="image">
@@ -71,27 +71,30 @@
     ============================================= -->
 
 </div><!-- #wrapper end -->
-<? $counter = 0?>
+<? $counter = 0 ?>
 <script type="application/ld+json">
-{
-    "@context": "https://www.schema.org",
-    "@type": "ItemList",
-    "url": "<?= RELA_DIR ?>blog",
-    "numberOfItems": "12",
-    "itemListElement": [<? foreach ($export['blog'] as $k => $v) : $counter++; ?> 
-        {
-            "@type": "Product",
-            "image": "<?= RELA_DIR ?>statics/blog/<?= $v['image'] ?>",
-            "url": "<?= RELA_DIR ?>blog/<?= $v['Blog_id'] ?>/<?= $v['url'] ?>",
-            "name": "<?= $v['title'] ?>",
-            "description": "<?= $v['title'] ?>",
-            "brand": "<?= $v['cat_name'] ?>",
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "5",
-                "reviewCount": "<?=$counter+10?>"
-            }
-        }<? if(count($export['blog']) - $counter != 0){ ?>,<? }?><? endforeach; ?>
-    ]
-}
+    {
+        "@context": "https://www.schema.org",
+        "@type": "ItemList",
+        "url": "<?= RELA_DIR ?>blog",
+        "numberOfItems": "12",
+        "itemListElement": [<? foreach ($export['blog'] as $k => $v) : $counter++; ?> {
+                    "@type": "Product",
+                    "image": "<?= RELA_DIR ?>statics/blog/<?= $v['image'] ?>",
+                    "url": "<?= RELA_DIR ?>blog/<?= $v['Blog_id'] ?>/<?= $v['url'] ?>",
+                    "name": "<?= $v['title'] ?>",
+                    "description": "<?= $v['title'] ?>",
+                    "brand": "<?= $v['cat_name'] ?>",
+                    "sku": 10000,
+                    "offers": 10000,
+                    "review": "",
+                    "aggregateRating": {
+                        "@type": "AggregateRating",
+                        "ratingValue": "5",
+                        "reviewCount": "<?= $counter + 10 ?>"
+                    }
+                }
+                <? if (count($export['blog']) - $counter != 0) { ?>, <? } ?><? endforeach; ?>
+                ]
+    }
 </script>

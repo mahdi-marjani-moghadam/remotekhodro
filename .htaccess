@@ -1,29 +1,6 @@
 
 RewriteEngine On
 
-RewriteRule ^sitemap\.xml/?$ sitemap.php
-
-Header unset Pragma
-FileETag None
-Header unset ETag
-
-# font
-<FilesMatch "\.(ttf|otf|eot|woff|woff2)$">
-    <IfModule mod_headers.c>
-        Header set Access-Control-Allow-Origin "http://skin.cdn.com"
-    </IfModule>
-</FilesMatch>
-
-# cache images/pdf docs for 100 days
-<FilesMatch "\.(ico|pdf|jpg|jpeg|png|gif)$">
-Header set Cache-Control "max-age=8640000, public, must-revalidate"
-#Header unset Last-Modified
-</FilesMatch>
-
-# cache html/htm/xml/txt diles for 2 hours
-<FilesMatch "\.(html|htm|txt|xsl)$">
-Header set Cache-Control "max-age=7200, must-revalidate"
-</FilesMatch>
 
 
 
@@ -53,7 +30,7 @@ Header set Cache-Control "max-age=7200, must-revalidate"
 </IfModule>
 
 RewriteCond %{HTTP_HOST} !^www\. [NC]
-RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
 
 RewriteEngine on
 RewriteCond $1 !^(index\.php|public|\.txt)
@@ -69,4 +46,9 @@ AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css  
 #RewriteEngine On RewriteBase / RewriteCond %{HTTP_HOST} ^www.remotekhodro.com [NC] RewriteRule ^(.*)$
 #http://remotekhodro.com/$1 [L,R=301]
 
-
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php72” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php72 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

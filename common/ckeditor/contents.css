@@ -2,18 +2,23 @@
 Copyright (c) 2003-2011, CKSource - Frederico Knabben. All rights reserved.
 For licensing, see LICENSE.html or http://ckeditor.com/license
 */
+/* @font-face{font-family:iransans-r;font-style:normal;font-weight:400;src:url(/fonts/IRANSans/eot/IRANSansWeb.eot);src:url(/fonts/IRANSans/eot/IRANSansWeb.eot?#iefix) format('embedded-opentype'),url(/fonts/IRANSans/woff2/IRANSansWeb.woff) format('woff2'),url(fonts/IRANSans/woff/IRANSansWeb.woff) format('woff'),url(fonts/IRANSans/ttf/IRANSansWeb.ttf) format('truetype')} */
+@font-face{font-family:iransans;font-style:normal;font-weight:400;src:url(/templates/template_rtl/css/fonts/IRANSans/eot/IRANSansWeb.eot);src:url(/templates/template_rtl/css/fonts/IRANSans/eot/IRANSansWeb.eot?#iefix) format('embedded-opentype'),url(/templates/template_rtl/css/fonts/IRANSans/woff2/IRANSansWeb.woff) format('woff2'),url(/templates/template_rtl/css/fonts/IRANSans/woff/IRANSansWeb.woff) format('woff'),url(/templates/template_rtl/css/fonts/IRANSans/ttf/IRANSansWeb.ttf) format('truetype')}
+/* @font-face{font-family:iransans-b;font-style:normal;font-weight:700;src:url(/fonts/IRANSans/eot/IRANSansWeb_Bold.eot);src:url(/fonts/IRANSans/eot/IRANSansWeb_Bold.eot?#iefix) format('embedded-opentype'),url(fonts/IRANSans/woff2/IRANSansWeb_Bold.woff) format('woff2'),url(fonts/IRANSans/woff/IRANSansWeb_Bold.woff) format('woff'),url(fonts/IRANSans/ttf/IRANSansWeb_Bold.ttf) format('truetype')} */
 
 body
 {
 	/* Font */
-	font-family: Arial, Verdana, sans-serif;
-	font-size: 12px;
+	font-family: iransans,Arial, Verdana, sans-serif;
+	font-size: 16px;
 
 	/* Text color */
-	color: #222;
+	/* color: #222; */
 
 	/* Remove the background color to make it transparent */
 	background-color: #fff;
+	max-width: 920px;
+	margin: auto;
 }
 
 ol,ul,dl

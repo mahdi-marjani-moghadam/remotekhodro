@@ -1,4 +1,23 @@
 <?php
+
+function cleanInputs($data)
+{
+	$clean_input = array();
+	if (is_array($data)) {
+		foreach ($data as $k => $v) {
+			$clean_input[$k] = cleanInputs($v);
+		}
+	} else {
+		if (get_magic_quotes_gpc()) {
+			$data = trim(stripslashes($data));
+		}
+		$data = strip_tags($data);
+		$clean_input = trim($data);
+	}
+	return $clean_input;
+}
+
+cleanInputs($_POST);
 include_once("../server.inc.php");
 //print_r($_SESSION);
 include_once(ROOT_DIR . "common/db.inc.php");

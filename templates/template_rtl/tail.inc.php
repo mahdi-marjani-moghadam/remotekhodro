@@ -1,15 +1,15 @@
 <div class="call-button">
-    
 
-    <a href="tel:09124802295" class="btn btn-success">تماس <i class="fas fa-phone"></i></a>
+
+    <a href="tel:09124802295" class="btn btn-success">تماس: 09124802295</a>
 </div>
-<footer id="footer" class=""  >
+<footer id="footer" class="">
     <div class="container">
-        <div class="footer-widgets-wrap clearfix p-2" >
-            <div class="col-md-3" >
+        <div class="footer-widgets-wrap clearfix p-2">
+            <div class="col-md-3">
                 <div class="widget clearfix">
                     <div class="clearfix" style="padding: 0; ">
-                            <strong>ایمیل:</strong> <span dir="ltr"> info@remotekhodro.com </span>
+                        <strong>ایمیل:</strong> <span dir="ltr"> info@remotekhodro.com </span>
                     </div><br>
                 </div>
             </div>
@@ -20,12 +20,12 @@
                     Instagram
                 </a>
             </div>
-            <div class="col-md-6" >
+            <div class="col-md-6">
                 تلفن های تماس:
                 <br>
                 <a href="tel:02144299069">021-44299069</a> , <a href="tel:02144299085">021-44299085</a> , <a href="tel:09124802295">09124802295</a> , <a href="tel:09385881754">09385881754</a>
                 <br>
-                 <a href="tel:02126154238">021-26154238</a> , <a href="tel:02122297397">021-22297397</a>
+                <a href="tel:02126154238">021-26154238</a> , <a href="tel:02122297397">021-22297397</a>
                 <br>
                 شعبه اصلی: تهران، آجودانیه(شهید سباری)، بلوار محمدی، خیابان البرز، مجتمع خودرویی البرز
                 <br>
@@ -38,7 +38,7 @@
 
             <div class="col_full nomargin  center rtl">
                 <div class="copyrights-menu copyright-links clearfix ">
-                    <a href="<?=RELA_DIR?>">خانه</a>/<a href="<?=RELA_DIR?>contactus">تماس با ما</a>/<a href="<?=RELA_DIR?>aboutus">درباره ما</a>
+                    <a href="<?php echo  RELA_DIR ?>">خانه</a>/<a href="<?php echo  RELA_DIR ?>contactus">تماس با ما</a>/<a href="<?php echo  RELA_DIR ?>aboutus">درباره ما</a>
                 </div>
             </div>
             <div class="col_full nomargin  center rtl fontsize10">تمامی حقوق وبسایت متعلق با سایت ساخت ریموت می باشد.</div>
@@ -47,35 +47,42 @@
 </footer>
 </div>
 <div id="gotoTop" class="icon-angle-up"></div>
- <script type="text/javascript" src="<?=TEMPLATE_DIR?>js/jquery.js"></script>
-<? /* <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> */?>
-<? /* <script type="text/javascript" src="<?=TEMPLATE_DIR?>js/plugins.js"></script>*/?>
-<? /*<script type="text/javascript" src="<?=TEMPLATE_DIR?>js/functions.js"></script> */ ?>
-<? /*
-<script type="text/javascript" src="<?=TEMPLATE_DIR?>include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-<script type="text/javascript" src="<?=TEMPLATE_DIR?>include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
- */?>
-<? /*
- <script type="text/javascript" src="<?=TEMPLATE_DIR?>include/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
+<script type="text/javascript" src="<?php echo  TEMPLATE_DIR ?>js/jquery.js"></script>
+<?php /* <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> */?>
+<?php /* <script type="text/javascript" src="<?php echo  TEMPLATE_DIR ?>js/plugins.js"></script>*/?>
+<?php /*<script type="text/javascript" src="<?php echo  TEMPLATE_DIR ?>js/functions.js"></script> */ ?>
+<?php /*
+<script type="text/javascript" src="<?php echo  TEMPLATE_DIR ?>include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="<?php echo  TEMPLATE_DIR ?>include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+*/?>
+<?php /*
+ <script type="text/javascript" src="<?php echo  TEMPLATE_DIR ?>include/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
 
- <script type="text/javascript" src="<?=TEMPLATE_DIR?>include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script type="text/javascript" src="<?=TEMPLATE_DIR?>include/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
-<script type="text/javascript" src="<?=TEMPLATE_DIR?>include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script type="text/javascript" src="<?=TEMPLATE_DIR?>include/rs-plugin/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script type="text/javascript" src="<?=TEMPLATE_DIR?>include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
-<script type="text/javascript" src="<?=TEMPLATE_DIR?>include/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
-<script type="text/javascript" src="<?=TEMPLATE_DIR?>include/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
- */?>
+<script type="text/javascript" src="<?php echo  TEMPLATE_DIR ?>include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script type="text/javascript" src="<?php echo  TEMPLATE_DIR ?>include/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
+<script type="text/javascript" src="<?php echo  TEMPLATE_DIR ?>include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script type="text/javascript" src="<?php echo  TEMPLATE_DIR ?>include/rs-plugin/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script type="text/javascript" src="<?php echo  TEMPLATE_DIR ?>include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
+<script type="text/javascript" src="<?php echo  TEMPLATE_DIR ?>include/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
+<script type="text/javascript" src="<?php echo  TEMPLATE_DIR ?>include/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
+*/?>
 <script type="text/javascript">
-    var tpj=jQuery;
+    var tpj = jQuery;
     tpj.noConflict();
     tpj(document).ready(function() {
-        tpj('#primary-menu-trigger').click(function () {
+        tpj('#primary-menu-trigger').click(function() {
             tpj('ul.norightborder.norightpadding.norightmargin').toggleClass('show');
-        })
+        });
+
+        tpj('.sub-menu').click(function() {
+            tpj(this).children('div:not(.arrow)').toggle();
+        });
+
     });
+
+
 </script>
-<? /*<script type="text/javascript">
+<?php /*<script type="text/javascript">
     jQuery(document).ready(function($){
         var $faqItems = $('#faqs .faq');
         if( window.location.hash != '' ) {
@@ -98,13 +105,17 @@
 </script> */?>
 
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137723846-5"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-137723846-5');
-    </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137723846-5"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-137723846-5');
+</script>
 
 </body>
+
 </html>

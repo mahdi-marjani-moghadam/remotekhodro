@@ -1,15 +1,16 @@
 <?php
-die(1);
 include_once 'server.inc.php';
-include_once ROOT_DIR.'common/db.inc.php';
-include_once ROOT_DIR.'common/init.inc.php';
-include_once ROOT_DIR.'common/func.inc.php';
-include_once ROOT_DIR.'model/db.inc.class.php';
-include_once ROOT_DIR.'common/looeic.php';
+include_once ROOT_DIR . 'common/db.inc.php';
+include_once ROOT_DIR . 'common/func.inc.php';
+include_once ROOT_DIR . 'common/init.inc.php';
+// phpinfo();
+// dd(1);
+
+include_once ROOT_DIR . 'model/db.inc.class.php';
+include_once ROOT_DIR . 'common/looeic.php';
 
 
-
-global $admin_info,$PARAM;
+global $admin_info, $PARAM;
 $url_main = substr($_SERVER['REQUEST_URI'], strlen(SUB_FOLDER) + 1);
 
 $url_main = urldecode($url_main);
@@ -68,7 +69,7 @@ if (array_search('page', $PARAM)) {
     }
 } else {*/
 
-    $componenetAdress = ROOT_DIR."component/{$PARAM['0']}/{$PARAM['0']}.php";
+$componenetAdress = ROOT_DIR . "component/{$PARAM['0']}/{$PARAM['0']}.php";
 
 
 //print_r_debug($componenetAdress);
@@ -76,10 +77,9 @@ if (array_search('page', $PARAM)) {
 
 
 if (!file_exists($componenetAdress)) {
-    $componenetAdress = ROOT_DIR."component/index/index.php";
+    $componenetAdress = ROOT_DIR . "component/index/index.php";
 
     //$componenetAdress = ROOT_DIR.'component/404/404.php';
 }
 
 include_once $componenetAdress;
-
