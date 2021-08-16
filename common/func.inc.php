@@ -1386,4 +1386,10 @@ function some_function($string){
     $string = substr($string,0,strrpos($string," "));
     return $string;
 }
+
+function dd($t){
+    echo '<pre>';
+    print_r($t);
+    die();
+}
 ?>

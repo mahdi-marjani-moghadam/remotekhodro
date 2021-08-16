@@ -51,7 +51,7 @@ class blogController
     {
         global $page;
         $blog = new blogModel();
-
+        // dd(1);
         $fields['limit']['start'] = (isset($page)) ? ($page - 1) * PAGE_SIZE : '0';
         $fields['limit']['length'] = PAGE_SIZE;
         $fields['order']['Blog_id'] = 'DESC';
@@ -95,7 +95,7 @@ class blogController
         $result = blogModel::find($_input);
         
 
-
+        
         global $PARAM;
         
         if($PARAM[2] != $result->url){
@@ -121,7 +121,8 @@ class blogController
         $export = $result->fields;
 
 
-        include_once ROOT_DIR.'component/category/model/category.model.php';
+        include_once ROOT_DIR.'component/services/model/services.model.php';
+        
         $cat = category::find(trim($result->category_id,','));
         
         
