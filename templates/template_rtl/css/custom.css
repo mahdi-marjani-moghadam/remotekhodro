@@ -1994,6 +1994,7 @@ input[type=checkbox]:not(:checked)+label.error{display:block!important}
 .title-right h4,.title-right h5,.title-right h6{padding:0 0 0 10px}
 .fancy-title.title-bottom-border h1,.fancy-title.title-bottom-border h2,.fancy-title.title-bottom-border h3,.fancy-title.title-bottom-border h4,.fancy-title.title-bottom-border h5,.fancy-title.title-bottom-border h6{display:block;background:0 0;padding:0 0 10px;border-bottom:2px solid #1abc9c}
 .fancy-title.title-dotted-border{background:url(images/icons/dotted.png) repeat-x center}
+.fancy-title.title-dotted-border h2,.fancy-title.title-dotted-border h1{padding-right:15px;}
 .before-heading{display:block;margin:0 0 5px;font-size:16px;font-family:'Crete Round',serif;font-style:italic;font-weight:400;color:#999}
 .divider{position:relative;overflow:hidden;margin:35px 0;color:#e5e5e5;width:100%}
 .divider.divider-margin{margin:70px 0}
@@ -3426,3 +3427,4 @@ body{padding-bottom:45px}
 @media screen and (max-width:600px){
 .column{width:100%;height:auto}
 }
+.red-text{color: red;}
